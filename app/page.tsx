@@ -140,10 +140,34 @@ export default function CohabitationAgreementGenerator() {
             </div>
           </div>
 
-          <Card className="rounded-3xl shadow-sm">
+          <div className="rounded-3xl border bg-gradient-to-br from-blue-50 to-indigo-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-semibold tracking-tight">Why Cohabitation Agreements Matter</h2>
+            <p className="mt-2 text-muted-foreground">Whether you're moving in together for the first time or after years of dating, a cohabitation agreement sets clear expectations—protecting both of you.</p>
+            
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div>
+                <h3 className="font-semibold text-foreground">Avoids money conflicts</h3>
+                <p className="mt-1 text-sm text-muted-foreground">Decide upfront who pays rent, bills, and shared expenses. No surprises or resentment later.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Clarifies property ownership</h3>
+                <p className="mt-1 text-sm text-muted-foreground">Document what you each own separately vs. jointly. Protects you both if the relationship ends.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Protects your independence</h3>
+                <p className="mt-1 text-sm text-muted-foreground">Define your own boundaries around finances, career, and personal life. Healthy relationships need transparency.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Saves thousands in lawyers</h3>
+                <p className="mt-1 text-sm text-muted-foreground">A lawyer charges $500–$2,000+. You get a professional agreement here in 5 minutes, free.</p>
+              </div>
+            </div>
+          </div>
+
+          <Card className="rounded-3xl shadow-sm border-2">
             <CardHeader>
-              <CardTitle className="text-xl">Build your agreement</CardTitle>
-              <CardDescription>Answer 6 simple questions. Get a professional agreement. Build trust with transparency.</CardDescription>
+              <CardTitle className="text-2xl">Build your agreement</CardTitle>
+              <CardDescription className="text-base">Answer 6 simple questions. We'll create a professional agreement you can use immediately.</CardDescription>
               <div className="space-y-2 pt-2">
                 <div className="flex items-center justify-between text-xs text-muted-foreground">
                   <span>Step {step + 1} of {steps.length}</span>
@@ -260,32 +284,33 @@ export default function CohabitationAgreementGenerator() {
                 </div>
               )}
 
-              <div className="flex flex-col gap-3 border-t pt-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-col gap-4 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
                 <div className="text-xs text-muted-foreground">
-                  Not legal advice. Laws vary by jurisdiction. Recommend lawyer review before signing.
+                  Disclaimer: Not legal advice. Laws vary by jurisdiction. Recommend lawyer review before signing.
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  <Button variant="outline" onClick={back} disabled={step === 0}>
+                <div className="flex flex-wrap gap-3">
+                  <Button variant="outline" onClick={back} disabled={step === 0} className="text-base px-6 py-2">
                     <ArrowLeft className="mr-2 h-4 w-4" /> Back
                   </Button>
                   {step < steps.length - 1 ? (
-                    <Button onClick={next}>
+                    <Button onClick={next} className="text-base px-8 py-2">
                       Next <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   ) : (
                     <>
-                      <Button variant="outline" onClick={downloadText}>
+                      <Button variant="outline" onClick={downloadText} className="text-base px-6 py-2">
                         <Download className="mr-2 h-4 w-4" /> TXT
                       </Button>
                       <Button
                         variant="outline"
                         onClick={() => downloadFromRoute("/api/export-docx", "cohabitation-agreement.docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document")}
+                        className="text-base px-6 py-2"
                       >
                         <Download className="mr-2 h-4 w-4" /> DOCX
                       </Button>
                       <Button
-                        variant="outline"
                         onClick={() => downloadFromRoute("/api/export-pdf", "cohabitation-agreement.pdf", "application/pdf")}
+                        className="text-base px-6 py-2"
                       >
                         <Download className="mr-2 h-4 w-4" /> PDF
                       </Button>
