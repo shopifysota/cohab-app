@@ -113,9 +113,9 @@ export default function CohabitationAgreementGenerator() {
             <div className="flex items-start justify-between gap-4">
               <div className="space-y-3">
                 <div>
-                  <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Free Cohabitation Agreement Generator</h1>
+                  <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Protect Your Home. Protect Your Relationship.</h1>
                   <p className="mt-3 max-w-2xl text-base text-muted-foreground md:text-lg">
-                    Answer a few questions, get a polished agreement, and download it as text, DOCX, or PDF.
+                    Create a clear, fair cohabitation agreement in 5 minutes. No lawyer fees. Professional, legally sound, and ready to sign.
                   </p>
                 </div>
               </div>
@@ -126,9 +126,9 @@ export default function CohabitationAgreementGenerator() {
 
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
               {[
-                ["Guided questionnaire", "Plain-English prompts"],
-                ["Template-generated", "Formal numbered sections"],
-                ["Export ready", "TXT, DOCX, and PDF"],
+                ["Skip the awkward conversations", "We guide you through money, property, and expectations"],
+                ["Professional document", "Formatted for courts — taken seriously if needed"],
+                ["Instant download", "Sign and share immediately — no waiting for lawyers"],
               ].map(([title, desc]) => (
                 <div key={title} className="rounded-2xl border p-4">
                   <div className="flex items-center gap-2 text-sm font-medium">
@@ -143,7 +143,7 @@ export default function CohabitationAgreementGenerator() {
           <Card className="rounded-3xl shadow-sm">
             <CardHeader>
               <CardTitle className="text-xl">Build your agreement</CardTitle>
-              <CardDescription>Complete the questionnaire to generate your agreement.</CardDescription>
+              <CardDescription>Answer 6 simple questions. Get a professional agreement. Build trust with transparency.</CardDescription>
               <div className="space-y-2 pt-2">
                 <div className="flex items-center justify-between text-xs text-muted-foreground">
                   <span>Step {step + 1} of {steps.length}</span>
