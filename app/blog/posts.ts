@@ -1010,6 +1010,675 @@ That's not distrust. That's the deepest form of trust there is.
 **[Start your agreement together →](/)** Our free generator makes the conversation easy. Five minutes, no awkwardness, and you'll both feel better when it's done.
     `.trim(),
   },
+  {
+    slug: "my-girlfriend-makes-more-than-me",
+    title: "My Girlfriend Makes Way More Than Me and It's Making Everything Weird",
+    description: "A boyfriend writes in about the silent tension that builds when there's a big income gap — and how it seeps into every decision about the apartment.",
+    date: "2026-03-09",
+    readingTime: "5 min read",
+    category: "Money",
+    content: `
+*"My girlfriend earns about $120K. I make $52K. When we moved in together, we split everything 50/50 because I didn't want to feel like a charity case. Six months in, I'm barely making it. I skip meals out with her friends because I can't afford it. She suggested a nicer apartment last week and I had to say no without explaining why. I feel like the income gap is slowly becoming the thing we can't talk about."* — Derek, 29
+
+Derek, you're doing the thing a lot of people in your position do: choosing pride over a conversation. And it's costing you more than money.
+
+## The 50/50 trap in unequal-income relationships
+
+A strict 50/50 split feels fair in principle. In practice, when there's a significant income gap, it creates two very different financial realities under the same roof:
+
+- **The higher earner barely notices shared expenses.** Rent, utilities, and groceries are a manageable fraction of their income. They have spending money left over. They suggest restaurants, vacations, and upgrades without thinking twice.
+- **The lower earner is stretched thin.** The same expenses eat a much larger share of their paycheck. They start declining things. They stop suggesting activities. They quietly absorb financial stress to avoid seeming inadequate.
+
+Over time, the lower earner pulls back — socially, emotionally, and from household decisions. The higher earner doesn't understand why. The gap becomes silence.
+
+## Why this isn't about ego
+
+Derek, not wanting to feel like a charity case is understandable. But here's the reframe: an income-proportional split isn't a handout. It's math.
+
+If you earn 30% of the combined household income, paying 30% of shared expenses means you're both contributing the same *proportion* of your earnings. Neither partner has more disposable income than the other relative to what they make. That's not charity — it's equity.
+
+## The models that actually work
+
+**Income-proportional split:**
+- Combined income: $172K
+- Your share: ~30% → you pay 30% of rent, utilities, groceries
+- Her share: ~70% → she pays 70%
+- Both of you contribute the same relative sacrifice
+
+**Tiered approach:**
+- Split rent proportionally, but split smaller bills (streaming, household supplies) 50/50
+- This gives you proportional relief on the biggest expense while keeping smaller items simple
+
+**Cap and contribute:**
+- Set a maximum percentage of income that either partner spends on shared housing (e.g., 30% of gross)
+- Your cap: ~$1,300/month. Her cap: ~$3,000/month. Choose an apartment that works within these limits.
+
+## The conversation starter
+
+You don't have to open with "I can't afford our life." Try this instead:
+
+*"I've been thinking about how we split expenses and I want to make sure it's sustainable for both of us long-term. Can we look at an income-based split? I found a tool that walks through it."*
+
+That's not weakness. That's financial maturity.
+
+**[Build your financial plan together →](/)** Our free cohabitation agreement generator calculates proportional splits and documents the arrangement you both agree to.
+    `.trim(),
+  },
+  {
+    slug: "broke-up-but-cant-afford-to-move-out",
+    title: "We Broke Up but Neither of Us Can Afford to Move Out",
+    description: "A partner writes in about the nightmare of ending a relationship when you're both stuck on the same lease with no exit plan.",
+    date: "2026-03-08",
+    readingTime: "6 min read",
+    category: "Legal",
+    content: `
+*"We broke up three weeks ago. We're still living in the same one-bedroom apartment because neither of us can afford first/last/deposit on a new place right now. The lease doesn't end for seven months. We sleep in the same bed because there's no couch big enough. Every morning I wake up next to someone I used to love and now can barely talk to. There's no plan. We just... exist here."* — Jordan, 26
+
+Jordan, this is one of the most common and least-discussed realities of cohabitation breakups. And it's brutal.
+
+When married couples separate, there are legal frameworks that address housing. When unmarried couples break up mid-lease, there's often nothing — no plan, no structure, and no easy exit.
+
+## The immediate reality
+
+When you're stuck in a shared lease after a breakup:
+
+- **Neither partner can force the other to leave** if both names are on the lease. You both have equal legal right to be there.
+- **Breaking the lease early usually means penalties** — often 1-2 months' rent, plus forfeiting the security deposit.
+- **Subletting may or may not be allowed** depending on the lease terms and landlord.
+- **One partner buying out the other** is possible but requires the leaving partner to have somewhere to go and money to get there.
+
+## A framework for surviving this
+
+### Step 1: Establish a temporary living agreement
+
+You're no longer a couple, but you're still cohabitants. Write down a temporary arrangement:
+
+- **Sleeping**: If there's any way to alternate — air mattress, friend's couch one week on/one week off — do it. Sharing a bed with an ex is psychologically corrosive.
+- **Shared spaces**: Agree on kitchen time, bathroom schedules, and quiet hours. This sounds absurd. It's necessary.
+- **Guests and dating**: Establish whether new romantic interests can visit the apartment. This conversation is awful but skipping it is worse.
+- **Communication**: Decide how you'll handle household logistics — text only, shared note on the fridge, whatever minimizes face-to-face tension.
+
+### Step 2: Create a financial exit plan
+
+- **Calculate the cost to break the lease.** Contact the landlord and ask about early termination terms. Sometimes they're more flexible than the lease suggests, especially if you offer to help find a replacement tenant.
+- **Determine what each person can afford.** Can one of you stay and take over the full lease? Can you each start saving $X/month toward a move-out fund?
+- **Set a target move-out date.** Even if it's months away, having a date on the calendar makes the situation feel survivable.
+
+### Step 3: Divide property now
+
+Don't wait until move-out day to figure out who gets what. Start the inventory now, while you're still (mostly) civil. Assign items, agree on buyouts, and document it.
+
+## What would have prevented this
+
+A cohabitation agreement with separation terms. Specifically:
+
+- **Who stays in the apartment** if the relationship ends
+- **How much notice** the departing partner gets (30 days? 60 days?)
+- **Who covers the lease penalty** if the lease is broken early
+- **How the security deposit is split**
+- **A move-out savings plan** built into the financial arrangement
+
+This isn't something most couples want to discuss when they're happily moving in together. But Jordan's situation is what happens when they don't.
+
+## For everyone still in a relationship reading this
+
+If you're currently living with a partner and you don't have a written plan for what happens if the relationship ends — write one now. Not because you're planning to break up, but because the plan is 1,000 times easier to make when you still like each other.
+
+**[Create your separation plan now →](/)** Our free cohabitation agreement includes a complete separation section — housing, property, timeline, and financial terms.
+    `.trim(),
+  },
+  {
+    slug: "boyfriends-debt-becoming-my-problem",
+    title: "My Boyfriend's Debt Is Slowly Becoming My Problem",
+    description: "A girlfriend writes in about the creeping reality of living with someone whose debt affects every shared financial decision.",
+    date: "2026-03-07",
+    readingTime: "5 min read",
+    category: "Money",
+    content: `
+*"My boyfriend has about $38K in student loans and $7K in credit card debt. When we moved in, he said it wouldn't affect me. It does. He can't contribute equally to groceries because his minimum payments eat his paycheck. He put a shared dinner on a credit card he's trying to pay off. Last month he asked if I could cover his half of utilities 'just this once.' I'm terrified his debt is becoming our debt without me ever agreeing to it."* — Nadia, 31
+
+Nadia, your fear is valid — and more common than you think. One partner's debt doesn't legally become the other's in an unmarried relationship. But practically? It absolutely bleeds over.
+
+## How one partner's debt affects both of you
+
+Even though you're not legally responsible for your boyfriend's loans or credit card balances, his debt impacts your shared life in real ways:
+
+- **He can't contribute his fair share** to shared expenses, shifting more of the burden to you
+- **Shared purchases go on credit** instead of being paid outright, creating new debt tied to your household
+- **His financial stress becomes household stress** — anxiety about money doesn't stay in one person's head
+- **Your financial goals get delayed** — saving for a vacation, building an emergency fund, upgrading the apartment — because household money is going toward his obligations
+- **If you cover his shortfalls**, you're effectively subsidizing his debt payments without any formal agreement
+
+## The critical distinctions to document
+
+### Your debt is your debt
+
+In a cohabitation agreement, each partner's pre-existing debt should be explicitly listed and assigned. This means:
+
+- His $38K in student loans are his responsibility. Period.
+- His $7K in credit card debt is his responsibility. Period.
+- Any new debt taken on for shared expenses should be documented — who owes what, and what the repayment terms are.
+- You are never responsible for debt in his name, and he's never responsible for debt in yours.
+
+### Covering shortfalls is a loan, not a gift
+
+When you pay his half of utilities, that's not just being nice. Without documentation, it's a gift with no expectation of repayment. If you want it to be a loan — even an informal one — write it down:
+
+- Date, amount, what it covered
+- Whether repayment is expected and when
+- Whether it accumulates or resets monthly
+
+This sounds clinical. It saves relationships.
+
+### Shared expenses need a firewall
+
+Your shared financial obligations (rent, utilities, groceries) should be funded from a clear, agreed-upon structure that works *within his actual budget* — not the budget he'd have without debt.
+
+That might mean:
+- A proportional split that accounts for his lower disposable income
+- A lower-cost apartment than you'd otherwise choose
+- Fewer shared expenses overall, with each person handling more individually
+
+## The conversation to have
+
+*"I love you and I want us to build a life together. But I need us to be really clear about how your debt does and doesn't affect our shared expenses. Can we write down our financial arrangement so we're both protected?"*
+
+This isn't an attack on his financial history. It's a boundary around your financial future.
+
+**[Protect your finances with a cohabitation agreement →](/)** Our free generator includes debt documentation, expense allocation, and shortfall policies. Five minutes of clarity.
+    `.trim(),
+  },
+  {
+    slug: "one-of-us-wants-a-roommate",
+    title: "My Partner Wants to Get a Roommate and I Absolutely Do Not",
+    description: "A boyfriend writes in about the standoff that happens when one person wants to save money by adding a third person to the apartment — and the other wants to protect their space.",
+    date: "2026-03-06",
+    readingTime: "5 min read",
+    category: "Planning",
+    content: `
+*"Rent is crushing us. My girlfriend suggested we get a roommate to split costs three ways. I get the logic. But we have a two-bedroom apartment and the second bedroom is our office and guest room. If a roommate moves in, we lose all our private space. I work from home two days a week. Where do I go? She says I'm being dramatic. I say she's not thinking about what daily life looks like with a stranger in our home."* — Chris, 32
+
+Chris, you're both right — and that's the problem. This is a financial decision and a lifestyle decision simultaneously, and those two things are pulling in opposite directions.
+
+## Why this conflict runs so deep
+
+Adding a roommate to a couple's apartment isn't just about money. It fundamentally changes:
+
+- **Privacy**: Shared bathrooms, kitchen schedules, common areas that are no longer truly "yours"
+- **Intimacy**: Arguments, affection, and vulnerability all happen differently with a third person present
+- **Routines**: Morning schedules, cleaning habits, noise levels — all now subject to someone else's preferences
+- **Power dynamics**: Who picks the roommate? Whose comfort level matters more? Who handles conflict with the third person?
+
+The partner who wants the roommate sees a budget solution. The partner who doesn't sees a lifestyle sacrifice. Neither perspective is wrong, but you can't compromise by getting "half a roommate."
+
+## What to decide before this goes further
+
+### 1. Is this actually necessary?
+
+Before adding a person to your home, exhaust the alternatives:
+- Can you reduce other expenses first?
+- Is a proportional rent split more sustainable than 50/50?
+- Could one of you pick up a side income that equals what a roommate would save?
+- Is a cheaper apartment an option when the lease renews?
+
+If the answer is still "we need a roommate," proceed — but with a plan.
+
+### 2. Non-negotiable terms
+
+Both partners should write down their hard boundaries:
+- **Space**: Which rooms are couple-only? Is the roommate limited to their bedroom and shared spaces?
+- **Guests**: Can the roommate have overnight guests? How often?
+- **Noise and quiet hours**: What are they, and who enforces them?
+- **Duration**: Is this a 6-month arrangement with a review, or open-ended?
+- **Exit clause**: How much notice before either party ends the arrangement?
+
+### 3. Financial structure
+
+- Rent split three ways — but is it equal thirds, or does the couple pay more for having the primary bedroom?
+- Utilities: split by person or by room?
+- Shared supplies: is the roommate part of the grocery arrangement or separate?
+- Security deposit contribution from the roommate
+
+### 4. Veto power
+
+Both partners should have to agree on the specific person. If one of you isn't comfortable with a candidate, that's a no. This isn't a majority-rules decision.
+
+## The written agreement you'll need
+
+If you do get a roommate, you'll need two documents:
+1. **A roommate agreement** with the third person (covering rent, rules, and termination)
+2. **An updated cohabitation agreement** between the two of you, documenting how the roommate arrangement affects your existing financial and space agreements
+
+Chris, your concern isn't dramatic. It's practical. And your girlfriend's concern about money isn't dismissive — it's urgent. The only way through is a structured conversation with written outcomes.
+
+**[Update your cohabitation agreement →](/)** Our free generator covers living arrangements, space allocation, and financial terms that adapt to changing circumstances.
+    `.trim(),
+  },
+  {
+    slug: "i-moved-cities-for-them-and-feel-trapped",
+    title: "I Moved to a New City for My Partner and Now I Feel Completely Trapped",
+    description: "A girlfriend writes in about the isolation and power imbalance that comes from relocating for a relationship — with no safety net in writing.",
+    date: "2026-03-04",
+    readingTime: "6 min read",
+    category: "Planning",
+    content: `
+*"I moved from Chicago to Austin for my boyfriend eight months ago. I left my job, my friends, my apartment — everything. He had a good setup here and it made sense at the time. Now I'm stuck in a city where I know nobody except him and his friends. My new job pays less than my old one. The apartment is in his name. When we fight, I have nowhere to go. I don't even have a couch to crash on. I love him, but I've never felt so powerless."* — Lisa, 28
+
+Lisa, what you're describing isn't just homesickness. It's a structural power imbalance — and it's one of the most common and least discussed risks of relocating for a relationship.
+
+## The relocation trap
+
+When one partner moves cities for the other, the balance shifts dramatically:
+
+- **Social network**: The established partner has friends, family, coworkers, and a support system. The relocated partner has... their partner.
+- **Financial position**: The relocator often takes a pay cut, burns through savings during the transition, and arrives financially weaker.
+- **Housing leverage**: The apartment is usually in the established partner's name. They were there first. The relocator is functionally a guest.
+- **Exit difficulty**: If the relationship ends, the established partner stays in their life. The relocator has to rebuild everything from zero — again.
+
+This doesn't mean your partner is taking advantage of you. It means the situation itself creates vulnerability that needs to be addressed with structure, not just good intentions.
+
+## What should have been documented before the move
+
+### Relocation costs
+- Who paid for the move?
+- If you both contributed, is there a repayment expectation if the relationship ends within a certain period?
+- Did you lose income during the transition? Is that accounted for in the expense split?
+
+### Housing rights
+- Even if the apartment is in his name, a cohabitation agreement can establish your rights as a contributing household member
+- Notice requirements: if the relationship ends, how long do you have to find a new place? (30 days when you have no local support system is not enough)
+- Security deposit: did you contribute? How is it returned?
+
+### Financial adjustment period
+- Are shared expenses proportional to current income, accounting for the pay cut you took?
+- Is there a transition period where the expense split is adjusted while you rebuild professionally?
+
+### Exit plan
+- If you leave, what financial support (if any) does the partner who asked you to relocate provide?
+- Is there an agreement about covering return moving costs?
+- How is shared property divided when one partner has significantly less ability to replace items?
+
+## What you can do right now
+
+Lisa, you can't undo the move. But you can change the power dynamic:
+
+1. **Build your own network.** This is the single most important thing. Coworkers, a gym, a class, a running group — anything that gives you people who aren't connected to him. This is your safety net.
+
+2. **Get on the lease.** If the landlord allows it, adding your name gives you legal standing in the apartment you're paying for.
+
+3. **Create a cohabitation agreement.** Document your financial contributions, your housing rights, and what happens if the relationship ends. This isn't pessimistic — it's the thing that turns "I feel trapped" into "I have options."
+
+4. **Build a personal emergency fund.** Even if it's small — $50 a paycheck into an account he doesn't have access to. Enough to buy a plane ticket home if you ever need it.
+
+## For anyone considering a move for a partner
+
+If you're reading this and thinking about relocating for a relationship: do it if you want to. But document everything first. A cohabitation agreement before a cross-country move is not optional — it's essential.
+
+**[Create your cohabitation agreement →](/)** Our free generator covers financial arrangements, housing rights, and separation terms — including relocation-specific protections.
+    `.trim(),
+  },
+  {
+    slug: "partner-wants-to-merge-all-finances",
+    title: "My Partner Wants to Combine All Our Money and I'm Not Ready",
+    description: "A partner writes in about the pressure to merge bank accounts when you're not married — and why wanting financial independence doesn't mean you're not committed.",
+    date: "2026-03-03",
+    readingTime: "5 min read",
+    category: "Money",
+    content: `
+*"My partner keeps pushing for us to merge everything — one bank account, one credit card, all income pooled together. They say it shows commitment. I want to keep my own account and my own savings. When I push back, they act hurt and say I'm 'keeping one foot out the door.' We've been together three years and living together for one. Am I wrong for wanting my own money?"* — Avery, 30
+
+Avery, you're not wrong. And you're not uncommitted. You're financially literate.
+
+## The myth of total financial merger
+
+There's a persistent cultural narrative that "real" commitment means sharing everything — including bank accounts. For married couples, there are legal and tax reasons to consider joint finances. For unmarried couples, merging all finances creates risk with almost no legal protection.
+
+Here's what total merger actually means for unmarried partners:
+
+- **No legal framework governs the split** if you break up. Divorce law doesn't apply. You'd be negotiating who owns what from a shared pool with no legal structure.
+- **Either partner can drain the account.** Joint accounts give both parties full access. There's no legal safeguard if one partner empties it.
+- **Income pooling obscures individual contributions.** If you earn more (or less), that distinction disappears — which creates problems if you ever need to untangle things.
+- **Debt exposure increases.** If your partner overdrafts a joint account or misuses a shared credit card, your credit and finances are directly affected.
+
+## The model that protects both of you
+
+The approach most financial advisors recommend for unmarried couples:
+
+### Three accounts
+1. **Your personal account**: Your income deposits here. Your personal expenses come from here.
+2. **Their personal account**: Same.
+3. **Joint account for shared expenses**: Both partners contribute a set amount monthly. Rent, utilities, groceries, and household costs come from this account.
+
+This gives you:
+- **Shared responsibility** for the home you share
+- **Individual autonomy** for personal spending, saving, and financial goals
+- **Transparency** about shared costs without surveillance of personal money
+- **Protection** if the relationship ends — your money is your money
+
+### What to document
+
+- How much each person contributes to the joint account (fixed amount or proportional to income)
+- What expenses the joint account covers — and what it doesn't
+- Minimum balance requirements
+- What happens to the joint account if you separate (split the balance 50/50? Proportional to contributions?)
+- Agreement that neither partner will overdraft or use the joint account for personal expenses
+
+## Why your partner's reaction matters
+
+Avery, when your partner says keeping separate accounts means you have "one foot out the door," that's emotional reasoning, not financial reasoning. 
+
+A partner who respects your financial boundaries is a partner who respects you. A partner who frames financial independence as disloyalty is — intentionally or not — asking you to give up a form of power.
+
+That doesn't mean they're controlling. They might genuinely believe that shared money equals shared commitment. But the conversation you need to have is: *"I'm fully committed to building a life with you. I also need financial autonomy, and those two things aren't contradictory."*
+
+## What to do next
+
+Suggest a cohabitation agreement that documents your financial structure. When it's written down and signed by both of you, it's clearly not "one foot out the door" — it's two people being intentional about how they build a shared life.
+
+**[Document your financial arrangement →](/)** Our free cohabitation agreement generator covers shared and separate finances, contribution amounts, and account policies.
+    `.trim(),
+  },
+  {
+    slug: "ex-still-has-keys-to-our-place",
+    title: "My Boyfriend's Ex Still Has Keys to Our Apartment",
+    description: "A girlfriend writes in about the uncomfortable reality of moving into a space with unresolved security boundaries — and why this is bigger than jealousy.",
+    date: "2026-03-02",
+    readingTime: "5 min read",
+    category: "Conflict",
+    content: `
+*"I moved into my boyfriend's apartment two months ago. Last week his ex showed up to 'pick up a box she left.' She used her key. I was home alone. Nobody told me she still had a key or that she had stuff here. When I told my boyfriend this wasn't okay, he said I was overreacting and that she 'just forgot to return it.' That was three days ago. She still has the key."* — Megan, 27
+
+Megan, this isn't about jealousy. This is about security. Someone who is not part of your household has unrestricted physical access to your home. That's a problem regardless of who they are or what their relationship to your partner was.
+
+## Why this matters more than he thinks
+
+Your boyfriend is framing this as an emotional issue — jealousy about an ex. But the real issues are:
+
+- **Physical security**: A person you didn't authorize has a key to the home where you sleep. Full stop.
+- **Consent**: You were never told someone else had access. You weren't consulted. You found out when a stranger opened your front door.
+- **Boundary setting**: His response ("you're overreacting") minimized a legitimate safety concern. Whether or not his ex is trustworthy is beside the point — the principle is that both residents should know who has access to their home and both should agree.
+
+## What should happen immediately
+
+1. **The key comes back or the locks change.** This is not negotiable. If the ex won't return the key, your boyfriend should pay for new locks. This should happen within days, not weeks.
+
+2. **Any remaining belongings get returned.** Set a date, pack the items, and arrange a handoff. No more surprise visits.
+
+3. **A conversation about access norms for the future.** Who has keys to your apartment? Both of you should know and agree. This includes:
+   - Family members
+   - Friends
+   - Building maintenance
+   - Pet sitters or housecleaners
+   - Absolutely no one from either partner's romantic past
+
+## What to document going forward
+
+When you move into a partner's existing home, there's a transition period where their old life overlaps with your new shared life. A cohabitation agreement can establish:
+
+- **Who has authorized access** to the home (keys, codes, building access)
+- **Both partners must agree** before giving anyone a key
+- **Protocol for retrieving belongings** from previous relationships or roommates — scheduled, announced, and with both residents informed
+- **Lock change policy** — if either partner feels security has been compromised, locks get changed. No debate.
+
+## The bigger picture
+
+Megan, the key itself is a solvable problem. The pattern it reveals is the bigger concern: your boyfriend made a unilateral decision about who has access to a home you share, dismissed your discomfort, and hasn't taken action in three days.
+
+That's not about an ex. That's about whether your sense of safety in your own home is treated as a priority. A written agreement makes these expectations explicit so they don't depend on one partner's judgment alone.
+
+**[Set household boundaries in writing →](/)** Our free cohabitation agreement covers security, access, guest policies, and shared decision-making norms.
+    `.trim(),
+  },
+  {
+    slug: "paying-for-improvements-to-their-house",
+    title: "I've Been Paying for Improvements to a House I Don't Own",
+    description: "A partner writes in about sinking thousands into their significant other's property — with nothing in writing to show for it.",
+    date: "2026-03-01",
+    readingTime: "6 min read",
+    category: "Property",
+    content: `
+*"I moved into my partner's house a year ago. They own it — mortgage is in their name. Over the past 12 months, I've paid for a new dishwasher ($800), half the cost of a fence ($2,100), a water heater replacement ($600), and I painted every room myself. I also pay $1,200/month in 'rent' to my partner. None of this is documented anywhere. A friend asked me what I'd get back if we split up. The answer is nothing. I feel sick."* — Taylor, 35
+
+Taylor, your friend asked the right question at the right time — because legally, they're almost certainly correct.
+
+## The homeowner advantage
+
+When you live in a home your partner owns, the legal landscape is starkly unequal:
+
+- **Your rent payments are just that — rent.** They don't build equity. They don't give you ownership interest. You're paying to live there, the same as any tenant.
+- **Improvements you pay for become part of their property.** That dishwasher, that fence, that water heater — they're now fixtures of a house you don't own. Unless there's a written agreement, you have no legal claim to reimbursement.
+- **Your labor (painting, repairs, maintenance) has no default compensation.** Without documentation, sweat equity in someone else's home is a gift.
+- **If you break up, you leave with what you brought.** The house, its improvements, and its increased value stay with the owner.
+
+This isn't speculation. It's how property law works for unmarried couples in virtually every U.S. state.
+
+## What should be documented
+
+### Rent payments
+- Are you paying fair market rent, below market, or above?
+- Does any portion of your rent contribute to mortgage principal (essentially building shared equity)?
+- How is rent adjusted over time?
+
+A critical decision: is your monthly payment pure rent (you're a tenant), or is part of it a contribution toward shared ownership? This distinction matters enormously and must be in writing.
+
+### Capital improvements
+Every major expense should be documented with:
+- Date, amount, and what it was for
+- Who paid how much
+- Whether the expense is a **gift**, a **loan** (to be repaid), or an **investment** (creating an equity interest in the property)
+
+That $2,100 fence contribution — was it a gift to your partner? A loan? Does it entitle you to a proportional equity claim? Whatever the answer is, it needs to be written down and signed.
+
+### Sweat equity
+If you're putting significant labor into improving someone else's property, assign it a value. Document:
+- What work you did
+- Estimated market cost if you'd hired someone
+- Whether this labor is credited as rent, loan, or equity contribution
+
+### What happens when you leave
+- Are you reimbursed for capital improvements?
+- Is there a formula for calculating your equity interest, if any?
+- What's the timeline for repayment?
+
+## The uncomfortable conversation
+
+Taylor, you need to talk to your partner about this now. Not as an accusation, but as a recognition that your current arrangement is financially hazardous for you.
+
+Try this: *"I've been paying for things around the house and I realized none of it is documented. I don't want either of us to be in a bad position if things change. Can we write down our arrangement?"*
+
+If your partner resists documenting your contributions to their property, that tells you something important about how they view your financial role in the relationship.
+
+## Going forward
+
+Stop paying for improvements to a home you don't own without a written agreement. Every dollar you spend should have a documented category: gift, loan, or equity investment. No exceptions.
+
+**[Protect your contributions →](/)** Our free cohabitation agreement generator covers property ownership, financial contributions, and capital improvements — including what happens when one partner owns the home.
+    `.trim(),
+  },
+  {
+    slug: "we-cant-agree-on-temperature",
+    title: "The Thermostat War Is Destroying Our Relationship (I'm Not Kidding)",
+    description: "A boyfriend writes in about the conflict that sounds trivial and absolutely isn't — because it's really about compromise, comfort, and who gets priority in a shared space.",
+    date: "2026-02-26",
+    readingTime: "5 min read",
+    category: "Conflict",
+    content: `
+*"I know this sounds stupid. It's not. My girlfriend keeps the apartment at 74°F. I'm comfortable at 68. Every day I come home and it's a sauna. I turn it down, she turns it back up. We've had actual screaming fights about the thermostat. She says she's freezing at my temperature. I'm sweating at hers. There's no compromise because six degrees is a huge gap when you're living in it 24/7. This might actually end us."* — Jake, 30
+
+Jake, it doesn't sound stupid. The thermostat fight is one of the most commonly cited daily irritants in cohabitation research — and it's a perfect example of a conflict that isn't really about what it appears to be about.
+
+## Why the thermostat fight is so volatile
+
+On the surface, this is about temperature. Below the surface, it's about three things:
+
+**1. Bodily autonomy in shared space**
+Your comfort in your own home is non-negotiable to most people. When the temperature is wrong for you, you can't escape it — it's everywhere, all the time. It's not like a mess in the kitchen you can close the door on.
+
+**2. No natural compromise**
+With most conflicts, there's a middle ground that both partners can live with. With temperature, the midpoint (71°F) often makes *both* people uncomfortable — too warm for one, too cold for the other. A compromise that makes everyone unhappy isn't a compromise.
+
+**3. Unilateral control**
+Whoever touches the thermostat last "wins." This creates a power struggle dynamic where the conflict re-ignites every time either partner adjusts the temperature. It's an argument that literally resets every few hours.
+
+## What actually works
+
+### Zone approach
+- Living room stays at one temperature
+- Bedroom stays at another
+- Space heaters and fans bridge individual gaps
+- If you have a programmable thermostat, set different temperatures for different times of day (lower when the cold-sensitive partner is under blankets at night, higher during the day)
+
+### Comfort budget
+This sounds weird, but it works: set the thermostat to the lower partner's preference and give the higher partner a "comfort budget" — a heated blanket, a quality space heater for their workspace, warming layers. The logic: it's easier to add warmth than remove it.
+
+### Time-based turns
+- Alternate who "owns" the thermostat by day, week, or time block
+- Daytime: one partner's preference. Evening: the other's.
+
+### The documented agreement
+Write down the actual arrangement. This prevents the daily re-litigation:
+- Default temperature setting
+- Allowed adjustment range
+- Who manages the thermostat schedule
+- Agreement on supplementary solutions (space heater, fan, heated blanket)
+
+## Why this needs to be in writing
+
+Jake, you've had screaming fights about this — which means verbal agreements aren't holding. When it's written down, neither partner can claim the other "agreed to 70" when they didn't. The document becomes the referee.
+
+This applies to every small daily conflict that recurs: noise levels, lighting preferences, morning routines, kitchen timing. The ones that feel minor are the ones that erode a relationship through daily friction.
+
+A cohabitation agreement isn't just for big legal issues. It's for anything that creates recurring conflict and needs a documented resolution.
+
+**[Document your household norms →](/)** Our free cohabitation agreement covers daily living arrangements, shared space rules, and everything couples actually fight about.
+    `.trim(),
+  },
+  {
+    slug: "i-pay-for-everything-and-theyre-saving",
+    title: "I'm Covering All Our Bills While My Partner Secretly Saves",
+    description: "A girlfriend writes in about discovering her boyfriend has been stacking savings while she covers the household — and the betrayal of an unspoken financial arrangement.",
+    date: "2026-02-24",
+    readingTime: "5 min read",
+    category: "Money",
+    content: `
+*"For the past eight months, I've been covering rent because my boyfriend said he was 'struggling.' He pays utilities and groceries, but I handle the $2,200 rent. Last week I saw a bank notification on his phone — he has $14,000 in savings. He's been saving aggressively while I cover the biggest bill. When I confronted him, he said the savings are 'for our future.' I didn't agree to fund our future alone while he builds a personal safety net."* — Talia, 29
+
+Talia, what you're describing isn't a misunderstanding. It's a financial arrangement you never consented to.
+
+## What actually happened here
+
+Your boyfriend represented himself as unable to contribute equally. Based on that representation, you took on a disproportionate financial burden — $2,200/month in rent — while he directed his income into personal savings.
+
+Whether he intended to deceive you or genuinely believed this arrangement was okay doesn't change the math:
+
+- **Over 8 months, you paid $17,600 in rent** that would have been split differently under an equal or proportional arrangement
+- **He accumulated $14,000 in personal savings** during a period he described as "struggling"
+- **You are financially weaker** and he is financially stronger as a direct result of this arrangement
+
+This is exactly the kind of situation that a written financial agreement prevents.
+
+## The violation here isn't just financial
+
+It's about informed consent. You agreed to cover more of the bills because you believed your partner couldn't afford to contribute. If you'd known he was able to save $1,750/month, you'd have made a very different decision.
+
+Financial transparency between cohabitating partners isn't about surveillance. It's about ensuring that both partners are making decisions based on accurate information.
+
+## What needs to happen now
+
+### 1. Rebalance immediately
+The current arrangement ends today. If he has $14,000 in savings, he can contribute his fair share of rent going forward. Calculate what an equitable split looks like and start it next month.
+
+### 2. Address the back-payment
+This is uncomfortable but necessary: you overpaid rent for 8 months based on incomplete information. A fair resolution might include:
+- He reimburses you for the difference between what you paid and what a fair split would have been
+- He covers a larger share of rent going forward until the imbalance is corrected
+- Some portion of his savings is recognized as built on your financial sacrifice
+
+### 3. Get the new arrangement in writing
+Whatever you agree to, document it. This includes:
+- Exact income disclosure from both partners
+- Exact contribution amounts for rent, utilities, and shared expenses
+- Agreement to disclose significant changes in income or savings
+- Annual or quarterly financial check-ins
+
+## For everyone reading this
+
+Financial deception in a relationship doesn't always look dramatic. Sometimes it looks like "I'm struggling" when savings are growing. Sometimes it looks like one partner gradually covering more while the other quietly benefits.
+
+The only protection is a written agreement with clear income disclosure requirements and defined contribution amounts. When both partners know exactly what the other earns and exactly what each contributes, arrangements like Talia's can't happen.
+
+**[Build a transparent financial agreement →](/)** Our free cohabitation agreement generator covers income disclosure, expense allocation, savings, and financial review schedules.
+    `.trim(),
+  },
+  {
+    slug: "we-disagree-about-how-clean-is-clean-enough",
+    title: "My Boyfriend Says I'm 'Too Clean' — But I Just Want to Live in a Normal Apartment",
+    description: "A girlfriend writes in about the specific, daily frustration of different hygiene standards — and why 'just relax' isn't a solution.",
+    date: "2026-02-22",
+    readingTime: "5 min read",
+    category: "Conflict",
+    content: `
+*"I'm not a clean freak. I just want the dishes done the same day, the bathroom cleaned weekly, and the floor swept before crumbs pile up. My boyfriend says I 'stress him out' with my 'cleaning schedule.' He leaves wet towels on the bed, food containers open on the counter, and hasn't cleaned the bathroom once in four months. When I ask him to help, he says I should 'relax my standards.' His standards are a health hazard."* — Anika, 26
+
+Anika, "relax your standards" is one of those phrases that sounds reasonable and means absolutely nothing. It's a way of saying "your comfort level is the problem" — when in reality, the problem is that two people sharing a home have never defined what "clean" actually means in their household.
+
+## The real issue: undefined expectations
+
+Both of you have a definition of clean. Neither of you has stated it explicitly. Your standard: dishes done same day, weekly bathroom, regular sweeping. His standard: whatever he notices, whenever he notices it (which seems to be rarely).
+
+Neither standard exists in a vacuum. But only one of you is experiencing daily consequences — you're the one who sees the mess, feels the stress, and does the work to fix it. He doesn't see it, so he doesn't feel it, and he concludes that you're the uptight one.
+
+This isn't a personality difference. It's a labor gap masquerading as a preference gap.
+
+## What "relax your standards" actually means
+
+When your partner says this, here's what he's really saying (whether he knows it or not):
+
+- "I don't want to increase my effort"
+- "Your discomfort isn't a strong enough reason for me to change"
+- "The current arrangement (where you do more) works for me"
+
+That's not a compromise. That's one partner dictating the household standard by doing nothing and expecting the other to accept it.
+
+## The only fix that works
+
+### 1. Define "done" for every recurring task
+
+| Task | Standard | Frequency |
+|------|----------|-----------|
+| Dishes | Washed, dried, and put away | Same day as use |
+| Bathroom | Toilet, sink, tub, mirror, and floor cleaned | Weekly (pick a day) |
+| Kitchen counters | Wiped down, food put away | After every meal |
+| Floors | Swept/vacuumed | Twice weekly |
+| Laundry | Washed, folded, put away | Within 24 hours of washing |
+| Towels | Hung on rack after use, never on bed | After every use |
+
+### 2. Assign ownership
+
+Every task has one owner. That person is responsible for meeting the defined standard at the defined frequency. No reminders. No "I forgot." If it's your task and it isn't done, that's a failure to uphold the agreement.
+
+### 3. Write it down
+
+Verbal chore agreements decay within days. Written chore agreements hold because:
+- There's a reference point when someone says "I didn't know I was supposed to do that"
+- Both partners agreed to the standard — it's not one person imposing rules on the other
+- You can review and adjust it if something isn't working
+
+### 4. Review monthly
+
+Sit down for 10 minutes once a month. Is everything getting done? Does anyone feel like the split is unfair? Do any standards need adjusting?
+
+## When the real answer is incompatibility
+
+Anika, most of the time, a written system fixes this. Both partners agree, both commit, and the daily friction fades.
+
+But sometimes one partner simply will not meet a basic standard of cleanliness — and then it becomes a question of whether you can share a home with someone whose baseline is that far from yours.
+
+A cohabitation agreement helps here too: it reveals whether both partners are willing to commit to shared standards. If they'll sign it and uphold it, great. If they won't even discuss it, you have your answer.
+
+**[Create your household standards agreement →](/)** Our free cohabitation agreement generator includes a detailed chore and responsibilities section. Define the standards, split the tasks, and stop having the same argument every week.
+    `.trim(),
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
