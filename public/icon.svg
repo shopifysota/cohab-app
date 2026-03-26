@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Document background -->
+  <rect x="128" y="64" width="256" height="384" rx="32" fill="#3B82F6" stroke="#1E40AF" stroke-width="8"/>
+  <!-- Document lines -->
+  <line x1="160" y1="160" x2="352" y2="160" stroke="white" stroke-width="16"/>
+  <line x1="160" y1="224" x2="288" y2="224" stroke="white" stroke-width="16"/>
+  <line x1="160" y1="288" x2="320" y2="288" stroke="white" stroke-width="16"/>
+  <line x1="160" y1="352" x2="256" y2="352" stroke="white" stroke-width="16"/>
+  <!-- Signature line -->
+  <line x1="192" y1="416" x2="320" y2="416" stroke="#E5E7EB" stroke-width="8"/>
+  <!-- Checkmark -->
+  <path d="M224 320 L256 352 L320 256" stroke="#10B981" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

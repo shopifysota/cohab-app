@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Main content -->
+  <text x="600" y="200" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold">
+    Cohabitation Agreement Generator
+  </text>
+
+  <text x="600" y="280" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24">
+    Create Professional Legal Templates in 5 Minutes
+  </text>
+
+  <text x="600" y="340" text-anchor="middle" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="18">
+    No Lawyer Fees Required • Download as PDF, DOCX, or TXT
+  </text>
+
+  <!-- Document icon -->
+  <rect x="480" y="400" width="240" height="160" rx="16" fill="white" opacity="0.9"/>
+  <line x1="520" y1="440" x2="680" y2="440" stroke="#3B82F6" stroke-width="4"/>
+  <line x1="520" y1="480" x2="640" y2="480" stroke="#3B82F6" stroke-width="4"/>
+  <line x1="520" y1="520" x2="660" y2="520" stroke="#3B82F6" stroke-width="4"/>
+  <path d="M540 500 L560 520 L600 480" stroke="#10B981" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Website URL -->
+  <text x="600" y="600" text-anchor="middle" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="16">
+    nestrules.net
+  </text>
+</svg>

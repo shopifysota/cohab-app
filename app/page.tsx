@@ -107,6 +107,45 @@ export default function CohabitationAgreementGenerator() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/40 p-4 md:p-8">
+      {/* SEO Content - Hidden from users but visible to search engines */}
+      <div className="sr-only">
+        <h1>Cohabitation Agreement Generator - Free Legal Template Creator</h1>
+        <p>Create professional cohabitation agreements online for free. Generate legally sound living together contracts in minutes. No attorney fees required. Download as PDF, Word document, or text file.</p>
+
+        <h2>What is a Cohabitation Agreement?</h2>
+        <p>A cohabitation agreement is a legal document that outlines the rights and responsibilities of unmarried couples living together. It covers financial arrangements, property ownership, debt responsibility, and separation terms.</p>
+
+        <h2>Why Do You Need a Cohabitation Agreement?</h2>
+        <ul>
+          <li>Protects both partners financially</li>
+          <li>Clarifies property ownership rights</li>
+          <li>Prevents disputes over shared expenses</li>
+          <li>Provides legal protection if relationship ends</li>
+          <li>Saves money compared to hiring a lawyer</li>
+        </ul>
+
+        <h2>Free Cohabitation Agreement Template Features</h2>
+        <ul>
+          <li>Step-by-step guided questionnaire</li>
+          <li>Professional legal language</li>
+          <li>Customizable terms and conditions</li>
+          <li>Multiple export formats (PDF, DOCX, TXT)</li>
+          <li>Instant download and printing</li>
+        </ul>
+
+        <h2>Cohabitation Agreement Topics Covered</h2>
+        <ul>
+          <li>Rent and mortgage payment responsibilities</li>
+          <li>Utility bill sharing arrangements</li>
+          <li>Bank account and financial management</li>
+          <li>Property ownership (separate vs. joint)</li>
+          <li>Debt and liability responsibilities</li>
+          <li>Pet ownership and care arrangements</li>
+          <li>Relationship termination procedures</li>
+          <li>Dispute resolution methods</li>
+        </ul>
+      </div>
+
       <div className="mx-auto max-w-3xl space-y-6">
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
           <div className="rounded-3xl border bg-background p-6 shadow-sm">
