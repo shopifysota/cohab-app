@@ -91,6 +91,36 @@ function renderContent(raw: string) {
       return <hr key={i} className="my-8 border-border" />;
     }
 
+    // Table
+    if (lines.length >= 2 && lines[0].includes("|") && /^\|?\s*[-:]+[-| :]*$/.test(lines[1])) {
+      const parseRow = (row: string) =>
+        row.split("|").map((c) => c.trim()).filter((c) => c !== "");
+      const headers = parseRow(lines[0]);
+      const rows = lines.slice(2).filter((l) => l.includes("|")).map(parseRow);
+      return (
+        <div key={i} className="my-4 overflow-x-auto">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="border-b border-border">
+                {headers.map((h, hi) => (
+                  <th key={hi} className="py-2 px-3 text-left font-semibold text-foreground">{renderInline(h)}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, ri) => (
+                <tr key={ri} className="border-b border-border/50">
+                  {row.map((cell, ci) => (
+                    <td key={ci} className="py-2 px-3 text-muted-foreground">{renderInline(cell)}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
     // Normal paragraph
     return (
       <p key={i} className="my-3 leading-7 text-foreground/90">
