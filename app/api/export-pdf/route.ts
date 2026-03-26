@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import puppeteer from "puppeteer";
+import { rateLimit } from "@/lib/rate-limit";
 
 function toHtml(agreement: string) {
   return `
@@ -56,13 +57,18 @@ function toHtml(agreement: string) {
 }
 
 export async function POST(req: Request) {
+  const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+  if (!rateLimit(ip + ":pdf", 10, 60_000)) {
+    return NextResponse.json({ error: "Too many requests" }, { status: 429 });
+  }
+
   let browser;
   try {
     const { agreement } = await req.json();
 
-    if (!agreement) {
+    if (!agreement || typeof agreement !== "string" || agreement.length > 100_000) {
       return NextResponse.json(
-        { error: "No agreement provided" },
+        { error: "Invalid agreement" },
         { status: 400 }
       );
     }

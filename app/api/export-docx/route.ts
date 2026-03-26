@@ -1,13 +1,19 @@
 import { NextResponse } from "next/server";
 import { Document, Packer, Paragraph, TextRun, HeadingLevel } from "docx";
+import { rateLimit } from "@/lib/rate-limit";
 
 export async function POST(req: Request) {
+  const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+  if (!rateLimit(ip + ":docx", 20, 60_000)) {
+    return NextResponse.json({ error: "Too many requests" }, { status: 429 });
+  }
+
   try {
     const { agreement } = await req.json();
 
-    if (!agreement) {
+    if (!agreement || typeof agreement !== "string" || agreement.length > 100_000) {
       return NextResponse.json(
-        { error: "No agreement provided" },
+        { error: "Invalid agreement" },
         { status: 400 }
       );
     }
