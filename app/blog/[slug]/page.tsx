@@ -100,11 +100,22 @@ function renderContent(raw: string) {
   });
 }
 
-/** Handle **bold**, [text](url), and inline code */
+/** Handle **bold**, [text](url), **[bold link](url)**, and inline code */
 function renderInline(text: string): React.ReactNode {
-  // Split on markdown links [text](url), **bold**
-  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  // Split on bold-wrapped links, standalone links, and bold text
+  const parts = text.split(/(\*\*\[[^\]]+\]\([^)]+\)\*\*|\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
   return parts.map((part, i) => {
+    // Bold-wrapped link: **[text](url)**
+    const boldLinkMatch = part.match(/^\*\*\[([^\]]+)\]\(([^)]+)\)\*\*$/);
+    if (boldLinkMatch) {
+      const [, label, href] = boldLinkMatch;
+      const isInternal = href.startsWith("/");
+      return isInternal ? (
+        <strong key={i}><Link href={href} className="underline underline-offset-4 hover:text-primary transition-colors">{label}</Link></strong>
+      ) : (
+        <strong key={i}><a href={href} className="underline underline-offset-4 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">{label}</a></strong>
+      );
+    }
     if (part.startsWith("**") && part.endsWith("**")) {
       return <strong key={i}>{part.slice(2, -2)}</strong>;
     }
