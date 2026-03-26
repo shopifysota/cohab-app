@@ -155,10 +155,6 @@ export default function CohabitationAgreementGenerator() {
   const [step, setStep] = useState(0);
   const [form, setForm] = useState(initialForm);
   const [error, setError] = useState("");
-  const [worksheetCustom, setWorksheetCustom] = useState("");
-  const [worksheetExtra, setWorksheetExtra] = useState<string[]>([]);
-  const [worksheetSelections, setWorksheetSelections] = useState<Record<string, string>>({});
-
   const getTotalSteps = () => (form.includeLifestyle ? 7 : 6);
 
   const getCurrentStepName = (stepIndex: number) => {
@@ -184,35 +180,6 @@ export default function CohabitationAgreementGenerator() {
     const a = document.createElement("a");
     a.href = url;
     a.download = "cohabitation-agreement.txt";
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
-  const downloadWorksheet = () => {
-    const lines = [
-      "Cohabitation Conversation Workbook",
-      "\n",
-      "1. What do we agree on for shared expenses?",
-      `   - ${worksheetSelections["budgetStyle"] || "[select one]"}`,
-      "\n",
-      "2. Decision making style:",
-      `   - ${worksheetSelections["decisionProcess"] || "[select one]"}`,
-      "\n",
-      "3. Conflict handling:",
-      `   - ${worksheetSelections["conflictResolution"] || "[select one]"}`,
-      "\n",
-      "4. Add your own agreement topic:",
-      `   - ${worksheetCustom || "[custom option]"}`,
-      "\n",
-      "Extra items:",
-      ...worksheetExtra.map((item) => `   - ${item}`),
-    ].join("\n");
-
-    const blob = new Blob([lines], { type: "text/plain;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "cohabitation-workbook.txt";
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -312,9 +279,6 @@ export default function CohabitationAgreementGenerator() {
                   <p className="mt-2 text-xs text-muted-foreground">
                     Looking for practical guidance first? <Link href="/blog" className="underline-offset-4 hover:underline">Visit the blog</Link>.
                   </p>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      <button onClick={downloadWorksheet} className="text-blue-600 hover:underline">Download our conversation worksheet</button> to talk through expectations first.
-                    </p>
                 </div>
               </div>
               <div className="hidden rounded-2xl border bg-muted/60 p-3 lg:block">
@@ -364,18 +328,10 @@ export default function CohabitationAgreementGenerator() {
                 </div>
               </div>
               <aside className="rounded-2xl border border-indigo-200 bg-white p-4 shadow-sm">
-                <h3 className="text-lg font-semibold">Partner conversation guide</h3>
-                <p className="mt-2 text-sm text-muted-foreground">Use this mini worksheet for communication style, shared decision-making, and expectations before finalizing your agreement.</p>
-                <ul className="mt-3 list-disc pl-5 text-sm text-muted-foreground space-y-1">
-                  <li>Agree on how to talk when money gets tight</li>
-                  <li>Pick check-in frequency (weekly, monthly, or as needed)</li>
-                  <li>Document guest, chore, and shared property norms</li>
-                </ul>
-                <Button onClick={downloadWorksheet} className="mt-4 w-full text-sm font-semibold">
-                  Download conversation worksheet
-                </Button>
+                <h3 className="text-lg font-semibold">A note on legal advice</h3>
+                <p className="mt-2 text-sm text-muted-foreground">This tool generates a clear, plain-language agreement based on your answers. For complex situations, consider having a lawyer review the final document.</p>
                 <p className="mt-3 text-xs text-muted-foreground">
-                  Notarization is optional but strongly encouraged for extra confidence. Strongly encouraged, but not a replacement for legal advice.
+                  Notarization is optional but strongly encouraged for extra confidence.
                 </p>
               </aside>
             </div>
@@ -411,91 +367,6 @@ export default function CohabitationAgreementGenerator() {
                     <div className="space-y-2">
                       <Label>Partner two</Label>
                       <Input value={form.partnerTwo} onChange={(e) => update("partnerTwo", e.target.value)} placeholder="Alex Morgan" />
-                    </div>
-                  </div>
-
-                  <div className="rounded-2xl border border-blue-200 bg-blue-50 p-4 mt-4">
-                    <h3 className="text-lg font-semibold">Conversation guide + worksheet</h3>
-                    <p className="text-sm text-muted-foreground">Use this quick workbook to align on habits and expectations before you finish your agreement.</p>
-
-                    <div className="mt-3 space-y-3 text-sm">
-                      <div>
-                        <Label className="text-xs">1. Money & household expense style</Label>
-                        <select
-                          value={worksheetSelections.budgetStyle || ""}
-                          onChange={(e) => setWorksheetSelections((prev) => ({ ...prev, budgetStyle: e.target.value }))}
-                          className="mt-1 w-full rounded-md border p-2"
-                        >
-                          <option value="">Select one</option>
-                          <option value="Split equally">Split equally</option>
-                          <option value="Proportional to income">Proportional to income</option>
-                          <option value="Shared account with monthly reconciliation">Shared account with monthly reconciliation</option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <Label className="text-xs">2. Decision making</Label>
-                        <select
-                          value={worksheetSelections.decisionProcess || ""}
-                          onChange={(e) => setWorksheetSelections((prev) => ({ ...prev, decisionProcess: e.target.value }))}
-                          className="mt-1 w-full rounded-md border p-2"
-                        >
-                          <option value="">Select one</option>
-                          <option value="Joint consensus">Joint consensus</option>
-                          <option value="Lead partner for certain areas">Lead partner for certain areas</option>
-                          <option value="Weekly check-ins and adjustments">Weekly check-ins and adjustments</option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <Label className="text-xs">3. Disputes & communication</Label>
-                        <select
-                          value={worksheetSelections.conflictResolution || ""}
-                          onChange={(e) => setWorksheetSelections((prev) => ({ ...prev, conflictResolution: e.target.value }))}
-                          className="mt-1 w-full rounded-md border p-2"
-                        >
-                          <option value="">Select one</option>
-                          <option value="Talk first, then day to cool down">Talk first, then day to cool down</option>
-                          <option value="Use written list and choose top 2 priorities">Use written list and choose top 2 priorities</option>
-                          <option value="Mediation with friend/family or third-party">Mediation with friend/family or third-party</option>
-                        </select>
-                      </div>
-
-                      <div className="flex gap-2">
-                        <Input
-                          value={worksheetCustom}
-                          onChange={(e) => setWorksheetCustom(e.target.value)}
-                          placeholder="Add a custom topic (e.g. pet care schedule)"
-                          className="flex-1"
-                        />
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() => {
-                            if (worksheetCustom.trim()) {
-                              setWorksheetExtra((prev) => [...prev, worksheetCustom.trim()]);
-                              setWorksheetCustom("");
-                            }
-                          }}
-                        >
-                          Add
-                        </Button>
-                      </div>
-
-                      {worksheetExtra.length > 0 && (
-                        <div className="rounded-lg border border-blue-200 bg-white p-2 text-xs">
-                          <p className="font-medium">Extra items:</p>
-                          <ul className="list-disc pl-5">
-                            {worksheetExtra.map((item, index) => (
-                              <li key={`${item}-${index}`}>{item}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-
-                      <Button onClick={downloadWorksheet} className="w-full text-sm font-semibold mt-2">
-                        Download Worksheet
-                      </Button>
                     </div>
                   </div>
 
