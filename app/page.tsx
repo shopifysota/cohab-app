@@ -27,7 +27,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 
-const steps = ["Partners", "Home", "Money", "Property", "Lifestyle", "Separation", "Review"];
+const steps = ["Partners", "Home", "Money", "Property", "Separation", "Review"];
 
 const initialForm = {
   // Basic Info
@@ -154,17 +154,11 @@ export default function CohabitationAgreementGenerator() {
   const [form, setForm] = useState(initialForm);
   const [error, setError] = useState("");
 
-  // Calculate total steps based on enabled sections
-  const getTotalSteps = () => {
-    let steps = 5; // Partners, Home, Money, Property, Separation
-    if (form.includeLifestyle) steps++;
-    return steps + 1; // +1 for Review
-  };
+  // Calculate total steps (always 6 pages: partners, home, money, property, separation, review)
+  const getTotalSteps = () => 6;
 
   const getCurrentStepName = (stepIndex: number) => {
-    const baseSteps = ["Partners", "Home", "Money", "Property"];
-    if (form.includeLifestyle) baseSteps.push("Lifestyle");
-    baseSteps.push("Separation", "Review");
+    const baseSteps = ["Partners", "Home", "Money", form.includeLifestyle ? "Property + Lifestyle" : "Property", "Separation", "Review"];
     return baseSteps[stepIndex] || "Review";
   };
 
@@ -492,62 +486,6 @@ export default function CohabitationAgreementGenerator() {
                 </div>
               )}
 
-              {step === 3 && !form.includeLifestyle && (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-full bg-orange-100 p-2">
-                      <AlertTriangle className="h-5 w-5 text-orange-600" />
-                    </div>
-                    <SectionHeader title="What happens if things change?" description="Add move-out and dispute-resolution terms." />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Breakup or move-out terms</Label>
-                    <Textarea value={form.breakupTerms} onChange={(e) => update("breakupTerms", e.target.value)} rows={5} />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Dispute resolution</Label>
-                    <Textarea value={form.disputeResolution} onChange={(e) => update("disputeResolution", e.target.value)} rows={4} />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Additional terms</Label>
-                    <Textarea
-                      value={form.extraTerms}
-                      onChange={(e) => update("extraTerms", e.target.value)}
-                      placeholder="Optional: confidentiality, notices, furniture, parking, guests..."
-                      rows={4}
-                    />
-                  </div>
-                </div>
-              )}
-
-              {step === 3 && form.includeLifestyle && (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-full bg-pink-100 p-2">
-                      <Heart className="h-5 w-5 text-pink-600" />
-                    </div>
-                    <SectionHeader title="How will we live together?" description="Add lifestyle and daily living arrangements." />
-                  </div>
-
-                  {!form.includeTechnology && !form.includeInsurance && (
-                    <div className="grid gap-3 sm:grid-cols-2 mb-4">
-                      <button
-                        onClick={() => update("includeTechnology", true)}
-                        className="rounded-lg border-2 border-dashed border-gray-300 p-3 text-sm text-gray-600 hover:border-gray-400 hover:text-gray-900 transition-colors"
-                      >
-                        <Plus className="h-4 w-4 inline mr-2" />
-                        Add technology & accounts
-                      </button>
-                      <button
-                        onClick={() => update("includeInsurance", true)}
-                        className="rounded-lg border-2 border-dashed border-gray-300 p-3 text-sm text-gray-600 hover:border-gray-400 hover:text-gray-900 transition-colors"
-                      >
-                        <Plus className="h-4 w-4 inline mr-2" />
-                        Add insurance details
-                      </button>
-                    </div>
-                  )}
-
                   <div className="space-y-2">
                     <Label>Communication & decision making</Label>
                     <Textarea value={form.communication} onChange={(e) => update("communication", e.target.value)} placeholder="How will we communicate about important decisions? Weekly check-ins?" />
@@ -585,25 +523,7 @@ export default function CohabitationAgreementGenerator() {
                     </div>
                   )}
 
-                  {form.includeInsurance && (
-                    <div className="space-y-2 border-t pt-4">
-                      <div className="flex items-center justify-between">
-                        <Label className="text-base font-medium">Insurance & emergency funds</Label>
-                        <button
-                          onClick={() => update("includeInsurance", false)}
-                          className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700"
-                        >
-                          <Minus className="h-4 w-4" />
-                          Remove
-                        </button>
-                      </div>
-                      <Textarea value={form.insurance} onChange={(e) => update("insurance", e.target.value)} placeholder="Health insurance, renters insurance, car insurance, emergency savings" />
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {((step === 4 && !form.includeLifestyle) || (step === 4 && form.includeLifestyle)) && (
+              {step === 4 && (
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="rounded-full bg-orange-100 p-2">
@@ -621,17 +541,12 @@ export default function CohabitationAgreementGenerator() {
                   </div>
                   <div className="space-y-2">
                     <Label>Additional terms</Label>
-                    <Textarea
-                      value={form.extraTerms}
-                      onChange={(e) => update("extraTerms", e.target.value)}
-                      placeholder="Optional: confidentiality, notices, furniture, parking, guests..."
-                      rows={4}
-                    />
+                    <Textarea value={form.extraTerms} onChange={(e) => update("extraTerms", e.target.value)} placeholder="Optional: confidentiality, notices, furniture, parking, guests..." rows={4} />
                   </div>
                 </div>
               )}
 
-              {((step === 5 && !form.includeLifestyle) || (step === 5 && form.includeLifestyle)) && (
+              {step === 5 && (
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="rounded-full bg-emerald-100 p-2">
@@ -652,7 +567,7 @@ export default function CohabitationAgreementGenerator() {
                   <Button variant="outline" onClick={back} disabled={step === 0} className="text-base px-6 py-2">
                     <ArrowLeft className="mr-2 h-4 w-4" /> Back
                   </Button>
-                  {step < steps.length - 1 ? (
+                  {step < getTotalSteps() - 1 ? (
                     <Button onClick={next} className="text-base px-8 py-2">
                       Next <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
