@@ -14,6 +14,11 @@ import {
   FileText,
   AlertTriangle,
   Eye,
+  Phone,
+  Heart,
+  Settings,
+  Plus,
+  Minus,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -22,25 +27,56 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 
-const steps = ["Partners", "Home", "Money", "Property", "Separation", "Review"];
+const steps = ["Partners", "Home", "Money", "Property", "Lifestyle", "Separation", "Review"];
 
 const initialForm = {
+  // Basic Info
   partnerOne: "",
   partnerTwo: "",
+  partnerOnePhone: "",
+  partnerTwoPhone: "",
+  partnerOneEmail: "",
+  partnerTwoEmail: "",
+
+  // Home
   address: "",
   stateOrCountry: "",
   moveInDate: "",
+
+  // Money
   rentMortgageSplit: "",
   utilitiesSplit: "",
   bankAccounts: "Separate unless otherwise agreed in writing",
+  sharedExpenses: "",
+  emergencyFund: "",
+
+  // Property
   existingProperty: "Each party keeps property they owned before moving in together",
   sharedProperty: "Items purchased together are jointly owned unless otherwise agreed in writing",
   debts: "Each party remains solely responsible for debts in their own name",
   pets: "The parties will decide pet care cooperatively; ownership remains with the adopting party unless otherwise agreed",
+
+  // Lifestyle (Optional)
+  communication: "",
+  decisionMaking: "",
+  guests: "",
+  quietHours: "",
+  cleaning: "",
+  technology: "",
+  vacation: "",
+  insurance: "",
+
+  // Separation
   breakupTerms:
     "If the relationship ends, one party may move out upon reasonable written notice, and jointly owned items will be divided by mutual agreement or sold and the proceeds split equally.",
   disputeResolution: "The parties will attempt to resolve disputes through good-faith discussion before mediation.",
   extraTerms: "",
+
+  // Optional sections enabled/disabled
+  includeLifestyle: false,
+  includeContact: false,
+  includeInsurance: false,
+  includeTechnology: false,
 };
 
 function SectionHeader({ title, description }: { title: string; description: string }) {
@@ -54,7 +90,55 @@ function SectionHeader({ title, description }: { title: string; description: str
 
 function buildLocalAgreement(form: typeof initialForm) {
   const today = new Date().toLocaleDateString();
-  return `COHABITATION AGREEMENT\n\nThis Cohabitation Agreement (the "Agreement") is made between ${form.partnerOne || "[Partner One]"} and ${form.partnerTwo || "[Partner Two]"} on ${today}.\n\n1. PURPOSE\nThe parties wish to define their respective rights and responsibilities while living together at ${form.address || "[Address]"}, ${form.stateOrCountry || "[State/Country]"}. Their intended move-in date is ${form.moveInDate || "[Move-in date]"}.\n\n2. FINANCIAL ARRANGEMENTS\nRent / Mortgage: ${form.rentMortgageSplit || "[Describe split]"}.\nUtilities / Household Bills: ${form.utilitiesSplit || "[Describe split]"}.\nBank Accounts: ${form.bankAccounts || "[Describe arrangement]"}.\n\n3. PROPERTY\nPre-existing Property: ${form.existingProperty || "[Describe treatment of existing property]"}.\nShared Property: ${form.sharedProperty || "[Describe treatment of jointly acquired property]"}.\n\n4. DEBTS\n${form.debts || "[Describe debt responsibility]"}.\n\n5. PETS\n${form.pets || "[Describe pet arrangements]"}.\n\n6. SEPARATION OR MOVE-OUT\n${form.breakupTerms || "[Describe what happens if the relationship ends]"}.\n\n7. DISPUTE RESOLUTION\n${form.disputeResolution || "[Describe dispute resolution method]"}.\n\n8. ADDITIONAL TERMS\n${form.extraTerms || "None."}\n\n9. GENERAL\nThis Agreement reflects the parties' present intentions regarding shared living arrangements. The parties understand laws vary by jurisdiction and should seek independent legal advice before signing or relying on this document.\n\nSigned:\n\n______________________________\n${form.partnerOne || "[Partner One]"}\n\n______________________________\n${form.partnerTwo || "[Partner Two]"}\n`;
+  let agreement = `COHABITATION AGREEMENT\n\nThis Cohabitation Agreement (the "Agreement") is made between ${form.partnerOne || "[Partner One]"} and ${form.partnerTwo || "[Partner Two]"} on ${today}.\n\n`;
+
+  if (form.includeContact && (form.partnerOnePhone || form.partnerTwoPhone || form.partnerOneEmail || form.partnerTwoEmail)) {
+    agreement += `CONTACT INFORMATION\n`;
+    if (form.partnerOnePhone) agreement += `${form.partnerOne}: ${form.partnerOnePhone}\n`;
+    if (form.partnerTwoPhone) agreement += `${form.partnerTwo}: ${form.partnerTwoPhone}\n`;
+    if (form.partnerOneEmail) agreement += `${form.partnerOne}: ${form.partnerOneEmail}\n`;
+    if (form.partnerTwoEmail) agreement += `${form.partnerTwo}: ${form.partnerTwoEmail}\n\n`;
+  }
+
+  agreement += `1. RESIDENCE\nThe parties agree to live together at ${form.address || "[Address]"}, ${form.stateOrCountry || "[State/Country]"}. Their intended move-in date is ${form.moveInDate || "[Move-in date]"}.\n\n`;
+
+  agreement += `2. FINANCIAL ARRANGEMENTS\n`;
+  agreement += `Rent / Mortgage: ${form.rentMortgageSplit || "[Describe split]"}.\n`;
+  agreement += `Utilities / Household Bills: ${form.utilitiesSplit || "[Describe split]"}.\n`;
+  if (form.sharedExpenses) agreement += `Shared Expenses: ${form.sharedExpenses}.\n`;
+  if (form.emergencyFund) agreement += `Emergency Fund: ${form.emergencyFund}.\n`;
+  agreement += `Bank Accounts: ${form.bankAccounts || "[Describe arrangement]"}.\n\n`;
+
+  agreement += `3. PROPERTY\n`;
+  agreement += `Pre-existing Property: ${form.existingProperty || "[Describe treatment of existing property]"}.\n`;
+  agreement += `Shared Property: ${form.sharedProperty || "[Describe treatment of jointly acquired property]"}.\n\n`;
+
+  agreement += `4. DEBTS AND LIABILITIES\n${form.debts || "[Describe debt responsibility]"}.\n\n`;
+
+  agreement += `5. PETS\n${form.pets || "[Describe pet arrangements]"}.\n\n`;
+
+  if (form.includeLifestyle) {
+    agreement += `6. LIFESTYLE AND HOUSEHOLD\n`;
+    if (form.communication) agreement += `Communication: ${form.communication}.\n`;
+    if (form.guests) agreement += `Guests & Visitors: ${form.guests}.\n`;
+    if (form.quietHours) agreement += `Quiet Hours & Rules: ${form.quietHours}.\n`;
+    if (form.cleaning) agreement += `Cleaning & Maintenance: ${form.cleaning}.\n`;
+    if (form.vacation) agreement += `Vacation & Time Away: ${form.vacation}.\n`;
+    if (form.includeTechnology && form.technology) agreement += `Technology & Accounts: ${form.technology}.\n`;
+    if (form.includeInsurance && form.insurance) agreement += `Insurance: ${form.insurance}.\n`;
+    agreement += `\n`;
+  }
+
+  const sectionNumber = form.includeLifestyle ? 7 : 6;
+  agreement += `${sectionNumber}. SEPARATION OR MOVE-OUT\n${form.breakupTerms || "[Describe what happens if the relationship ends]"}.\n\n`;
+
+  agreement += `${sectionNumber + 1}. DISPUTE RESOLUTION\n${form.disputeResolution || "[Describe dispute resolution method]"}.\n\n`;
+
+  agreement += `${sectionNumber + 2}. ADDITIONAL TERMS\n${form.extraTerms || "None."}\n\n`;
+
+  agreement += `${sectionNumber + 3}. GENERAL\nThis Agreement reflects the parties' present intentions regarding shared living arrangements. The parties understand laws vary by jurisdiction and should seek independent legal advice before signing or relying on this document.\n\nSigned:\n\n______________________________\n${form.partnerOne || "[Partner One]"}\n\n______________________________\n${form.partnerTwo || "[Partner Two]"}\n`;
+
+  return agreement;
 }
 
 function AgreementPreview({ content }: { content: string }) {
@@ -70,11 +154,28 @@ export default function CohabitationAgreementGenerator() {
   const [form, setForm] = useState(initialForm);
   const [error, setError] = useState("");
 
-  const progress = ((step + 1) / steps.length) * 100;
+  // Calculate total steps based on enabled sections
+  const getTotalSteps = () => {
+    let steps = 5; // Partners, Home, Money, Property, Separation
+    if (form.includeLifestyle) steps++;
+    return steps + 1; // +1 for Review
+  };
+
+  const getCurrentStepName = (stepIndex: number) => {
+    const baseSteps = ["Partners", "Home", "Money", "Property"];
+    if (form.includeLifestyle) baseSteps.push("Lifestyle");
+    baseSteps.push("Separation", "Review");
+    return baseSteps[stepIndex] || "Review";
+  };
+
+  const progress = ((step + 1) / getTotalSteps()) * 100;
   const agreementText = useMemo(() => buildLocalAgreement(form), [form]);
 
-  const update = (key: string, value: string) => setForm((prev) => ({ ...prev, [key]: value }));
-  const next = () => setStep((s) => Math.min(s + 1, steps.length - 1));
+  const update = (key: string, value: string | boolean) => setForm((prev) => ({ ...prev, [key]: value }));
+  const next = () => {
+    const maxStep = getTotalSteps() - 1;
+    setStep((s) => Math.min(s + 1, maxStep));
+  };
   const back = () => setStep((s) => Math.max(s - 1, 0));
 
   const downloadText = () => {
@@ -236,8 +337,8 @@ export default function CohabitationAgreementGenerator() {
               <CardDescription className="text-base">Answer 6 simple questions. We'll create a professional agreement you can use immediately.</CardDescription>
               <div className="space-y-2 pt-2">
                 <div className="flex items-center justify-between text-xs text-muted-foreground">
-                  <span>Step {step + 1} of {steps.length}</span>
-                  <span>{steps[step]}</span>
+                  <span>Step {step + 1} of {getTotalSteps()}</span>
+                  <span>{getCurrentStepName(step)}</span>
                 </div>
                 <Progress value={progress} className="h-2" />
               </div>
@@ -249,7 +350,7 @@ export default function CohabitationAgreementGenerator() {
                     <div className="rounded-full bg-blue-100 p-2">
                       <Users className="h-5 w-5 text-blue-600" />
                     </div>
-                    <SectionHeader title="Who is this agreement for?" description="Start with the partners' names." />
+                    <SectionHeader title="Who is this agreement for?" description="Start with the partners' names and contact information." />
                   </div>
                   <div className="grid gap-4 md:grid-cols-2">
                     <div className="space-y-2">
@@ -261,6 +362,51 @@ export default function CohabitationAgreementGenerator() {
                       <Input value={form.partnerTwo} onChange={(e) => update("partnerTwo", e.target.value)} placeholder="Alex Morgan" />
                     </div>
                   </div>
+
+                  {!form.includeContact && (
+                    <div className="rounded-lg border-2 border-dashed border-gray-300 p-4">
+                      <button
+                        onClick={() => update("includeContact", true)}
+                        className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900"
+                      >
+                        <Plus className="h-4 w-4" />
+                        Add contact information (phone, email)
+                      </button>
+                    </div>
+                  )}
+
+                  {form.includeContact && (
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <h3 className="text-lg font-medium">Contact Information</h3>
+                        <button
+                          onClick={() => update("includeContact", false)}
+                          className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700"
+                        >
+                          <Minus className="h-4 w-4" />
+                          Remove
+                        </button>
+                      </div>
+                      <div className="grid gap-4 md:grid-cols-2">
+                        <div className="space-y-2">
+                          <Label>Partner one phone</Label>
+                          <Input value={form.partnerOnePhone} onChange={(e) => update("partnerOnePhone", e.target.value)} placeholder="(555) 123-4567" />
+                        </div>
+                        <div className="space-y-2">
+                          <Label>Partner two phone</Label>
+                          <Input value={form.partnerTwoPhone} onChange={(e) => update("partnerTwoPhone", e.target.value)} placeholder="(555) 987-6543" />
+                        </div>
+                        <div className="space-y-2">
+                          <Label>Partner one email</Label>
+                          <Input type="email" value={form.partnerOneEmail} onChange={(e) => update("partnerOneEmail", e.target.value)} placeholder="jordan@email.com" />
+                        </div>
+                        <div className="space-y-2">
+                          <Label>Partner two email</Label>
+                          <Input type="email" value={form.partnerTwoEmail} onChange={(e) => update("partnerTwoEmail", e.target.value)} placeholder="alex@email.com" />
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
@@ -336,10 +482,38 @@ export default function CohabitationAgreementGenerator() {
                     <Label>Pets</Label>
                     <Textarea value={form.pets} onChange={(e) => update("pets", e.target.value)} />
                   </div>
+
+                  {!form.includeLifestyle && (
+                    <div className="rounded-lg border-2 border-dashed border-gray-300 p-4 mt-4">
+                      <button
+                        onClick={() => update("includeLifestyle", true)}
+                        className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900"
+                      >
+                        <Plus className="h-4 w-4" />
+                        Add lifestyle & living arrangements (communication, guests, cleaning, etc.)
+                      </button>
+                    </div>
+                  )}
+
+                  {form.includeLifestyle && (
+                    <div className="rounded-lg border border-green-200 bg-green-50 p-4 mt-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm font-medium text-green-800">✓ Lifestyle section added</span>
+                        <button
+                          onClick={() => update("includeLifestyle", false)}
+                          className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700"
+                        >
+                          <Minus className="h-4 w-4" />
+                          Remove lifestyle section
+                        </button>
+                      </div>
+                      <p className="text-xs text-green-700">You'll be able to add communication preferences, household rules, and more in the next step.</p>
+                    </div>
+                  )}
                 </div>
               )}
 
-              {step === 4 && (
+              {step === 3 && !form.includeLifestyle && (
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="rounded-full bg-orange-100 p-2">
@@ -367,7 +541,118 @@ export default function CohabitationAgreementGenerator() {
                 </div>
               )}
 
-              {step === 5 && (
+              {step === 3 && form.includeLifestyle && (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="rounded-full bg-pink-100 p-2">
+                      <Heart className="h-5 w-5 text-pink-600" />
+                    </div>
+                    <SectionHeader title="How will we live together?" description="Add lifestyle and daily living arrangements." />
+                  </div>
+
+                  {!form.includeTechnology && !form.includeInsurance && (
+                    <div className="grid gap-3 sm:grid-cols-2 mb-4">
+                      <button
+                        onClick={() => update("includeTechnology", true)}
+                        className="rounded-lg border-2 border-dashed border-gray-300 p-3 text-sm text-gray-600 hover:border-gray-400 hover:text-gray-900 transition-colors"
+                      >
+                        <Plus className="h-4 w-4 inline mr-2" />
+                        Add technology & accounts
+                      </button>
+                      <button
+                        onClick={() => update("includeInsurance", true)}
+                        className="rounded-lg border-2 border-dashed border-gray-300 p-3 text-sm text-gray-600 hover:border-gray-400 hover:text-gray-900 transition-colors"
+                      >
+                        <Plus className="h-4 w-4 inline mr-2" />
+                        Add insurance details
+                      </button>
+                    </div>
+                  )}
+
+                  <div className="space-y-2">
+                    <Label>Communication & decision making</Label>
+                    <Textarea value={form.communication} onChange={(e) => update("communication", e.target.value)} placeholder="How will we communicate about important decisions? Weekly check-ins?" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Guests & visitors</Label>
+                    <Textarea value={form.guests} onChange={(e) => update("guests", e.target.value)} placeholder="Rules about having guests over, overnight stays, etc." />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Quiet hours & household rules</Label>
+                    <Textarea value={form.quietHours} onChange={(e) => update("quietHours", e.target.value)} placeholder="Quiet hours, noise levels, smoking, alcohol policies" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Cleaning & maintenance</Label>
+                    <Textarea value={form.cleaning} onChange={(e) => update("cleaning", e.target.value)} placeholder="Who handles cleaning? Chore schedules? Repairs?" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Vacation & time away</Label>
+                    <Textarea value={form.vacation} onChange={(e) => update("vacation", e.target.value)} placeholder="How much notice for trips? Vacation time sharing?" />
+                  </div>
+
+                  {form.includeTechnology && (
+                    <div className="space-y-2 border-t pt-4">
+                      <div className="flex items-center justify-between">
+                        <Label className="text-base font-medium">Technology & shared accounts</Label>
+                        <button
+                          onClick={() => update("includeTechnology", false)}
+                          className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700"
+                        >
+                          <Minus className="h-4 w-4" />
+                          Remove
+                        </button>
+                      </div>
+                      <Textarea value={form.technology} onChange={(e) => update("technology", e.target.value)} placeholder="Shared devices, streaming accounts, passwords, internet bills" />
+                    </div>
+                  )}
+
+                  {form.includeInsurance && (
+                    <div className="space-y-2 border-t pt-4">
+                      <div className="flex items-center justify-between">
+                        <Label className="text-base font-medium">Insurance & emergency funds</Label>
+                        <button
+                          onClick={() => update("includeInsurance", false)}
+                          className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700"
+                        >
+                          <Minus className="h-4 w-4" />
+                          Remove
+                        </button>
+                      </div>
+                      <Textarea value={form.insurance} onChange={(e) => update("insurance", e.target.value)} placeholder="Health insurance, renters insurance, car insurance, emergency savings" />
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {((step === 4 && !form.includeLifestyle) || (step === 4 && form.includeLifestyle)) && (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="rounded-full bg-orange-100 p-2">
+                      <AlertTriangle className="h-5 w-5 text-orange-600" />
+                    </div>
+                    <SectionHeader title="What happens if things change?" description="Add move-out and dispute-resolution terms." />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Breakup or move-out terms</Label>
+                    <Textarea value={form.breakupTerms} onChange={(e) => update("breakupTerms", e.target.value)} rows={5} />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Dispute resolution</Label>
+                    <Textarea value={form.disputeResolution} onChange={(e) => update("disputeResolution", e.target.value)} rows={4} />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Additional terms</Label>
+                    <Textarea
+                      value={form.extraTerms}
+                      onChange={(e) => update("extraTerms", e.target.value)}
+                      placeholder="Optional: confidentiality, notices, furniture, parking, guests..."
+                      rows={4}
+                    />
+                  </div>
+                </div>
+              )}
+
+              {((step === 5 && !form.includeLifestyle) || (step === 5 && form.includeLifestyle)) && (
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="rounded-full bg-emerald-100 p-2">
