@@ -284,27 +284,6 @@ export default function CohabitationAgreementGenerator() {
                 </div>
               ))}
             </div>
-
-            <div className="mt-6 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 border p-4">
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  <div className="h-8 w-8 rounded-full bg-blue-500 border-2 border-white flex items-center justify-center text-xs font-semibold text-white">JD</div>
-                  <div className="h-8 w-8 rounded-full bg-green-500 border-2 border-white flex items-center justify-center text-xs font-semibold text-white">SM</div>
-                  <div className="h-8 w-8 rounded-full bg-purple-500 border-2 border-white flex items-center justify-center text-xs font-semibold text-white">AR</div>
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-1 mb-1">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                    <span className="text-sm font-medium text-gray-900 ml-1">4.9/5</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">"Finally had the money talk without drama. This saved us weeks of awkward conversations!"</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="rounded-3xl border bg-gradient-to-br from-blue-50 to-indigo-50 p-8 shadow-sm">
@@ -687,24 +666,21 @@ export default function CohabitationAgreementGenerator() {
                         <p className="text-sm text-green-700">Download in your preferred format. All files include professional formatting.</p>
                       </div>
                       <div className="grid gap-3 sm:grid-cols-3">
-                        <Button onClick={downloadText} className="h-12 text-base font-semibold bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all">
-                          <Download className="mr-2 h-5 w-5" /> Download TXT
+                        <Button onClick={downloadText} className="h-12 text-sm font-semibold bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all px-3">
+                          <Download className="mr-2 h-4 w-4" /> TXT
                         </Button>
                         <Button
                           onClick={() => downloadFromRoute("/api/export-docx", "cohabitation-agreement.docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document")}
-                          className="h-12 text-base font-semibold bg-green-600 hover:bg-green-700 shadow-lg hover:shadow-xl transition-all"
+                          className="h-12 text-sm font-semibold bg-green-600 hover:bg-green-700 shadow-lg hover:shadow-xl transition-all px-3"
                         >
-                          <Download className="mr-2 h-5 w-5" /> Download DOCX
+                          <Download className="mr-2 h-4 w-4" /> DOCX
                         </Button>
                         <Button
                           onClick={() => downloadFromRoute("/api/export-pdf", "cohabitation-agreement.pdf", "application/pdf")}
-                          className="h-12 text-base font-semibold bg-red-600 hover:bg-red-700 shadow-lg hover:shadow-xl transition-all"
+                          className="h-12 text-sm font-semibold bg-red-600 hover:bg-red-700 shadow-lg hover:shadow-xl transition-all px-3"
                         >
-                          <Download className="mr-2 h-5 w-5" /> Download PDF
+                          <Download className="mr-2 h-4 w-4" /> PDF
                         </Button>
-                      </div>
-                      <div className="text-center text-sm text-muted-foreground">
-                        ✨ <strong>10,000+ couples</strong> have created agreements like yours
                       </div>
                     </div>
                   )}
