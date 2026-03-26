@@ -246,7 +246,7 @@ export default async function BlogPost({ params }: Props) {
           <h2 className="text-lg font-semibold">Protect yourself with a written agreement</h2>
           <p className="text-sm text-muted-foreground">
             A cohabitation agreement takes about 5 minutes to create and covers finances,
-            property, pets, and separation terms. Free, no lawyer needed, instant download.
+            property, pets, and separation terms. Free and easy to use.
           </p>
           <Link
             href="/"

@@ -63,7 +63,7 @@ When you document how you've agreed to split expenses, a few things happen:
 
 A cohabitation agreement doesn't have to be formal or intimidating. It's just a written record of what you both agreed to — covering rent, bills, shared property, and what happens if the relationship ends.
 
-**Ready to create yours?** Our [free cohabitation agreement generator](/) walks you through it in about 5 minutes. No lawyer needed.
+**Ready to create yours?** Our [free cohabitation agreement generator](/) walks you through it in about 5 minutes. Free and easy to use.
     `.trim(),
   },
   {

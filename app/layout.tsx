@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Free Cohabitation Agreement Generator | Create Professional Legal Templates",
-  description: "Create a professional cohabitation agreement in 5 minutes. No lawyer fees required. Generate legally sound agreements for couples living together. Download as PDF, DOCX, or TXT.",
-  keywords: "cohabitation agreement, living together agreement, legal template, relationship contract, domestic partnership, free legal forms, agreement generator",
+  title: "Free Cohabitation Agreement Generator | Professional Agreement Templates",
+  description: "Create a professional cohabitation agreement in 5 minutes. Free and easy to use. Generate clear, structured agreements for couples living together. Download as PDF, DOCX, or TXT. Not legal advice.",
+  keywords: "cohabitation agreement, living together agreement, agreement template, relationship contract, domestic partnership, free agreement generator, cohabitation form",
   authors: [{ name: "Cohabitation Agreement Generator" }],
   creator: "Cohabitation Agreement Generator",
   publisher: "Cohabitation Agreement Generator",
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     canonical: 'https://nestrules.net',
   },
   openGraph: {
-    title: "Free Cohabitation Agreement Generator | Professional Legal Templates",
-    description: "Create a professional cohabitation agreement in 5 minutes. No lawyer fees required. Generate legally sound agreements for couples living together.",
+    title: "Free Cohabitation Agreement Generator | Professional Agreement Templates",
+    description: "Create a professional cohabitation agreement in 5 minutes. Free and easy to use. Generate clear, structured agreements for couples living together.",
     url: 'https://nestrules.net',
     siteName: 'Cohabitation Agreement Generator',
     locale: 'en_US',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Free Cohabitation Agreement Generator | Professional Legal Templates",
-    description: "Create a professional cohabitation agreement in 5 minutes. No lawyer fees required.",
+    title: "Free Cohabitation Agreement Generator | Professional Agreement Templates",
+    description: "Create a professional cohabitation agreement in 5 minutes. Free and easy to use.",
   },
   robots: {
     index: true,
@@ -79,7 +79,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebApplication",
               "name": "Cohabitation Agreement Generator",
-              "description": "Create professional cohabitation agreements in 5 minutes. No lawyer fees required.",
+              "description": "Create professional cohabitation agreements in 5 minutes. Free and easy to use.",
               "url": "https://nestrules.net",
               "applicationCategory": "BusinessApplication",
               "operatingSystem": "Web Browser",

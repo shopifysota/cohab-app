@@ -131,7 +131,7 @@ export default function BlogIndex() {
           <h2 className="text-xl font-semibold">Ready to protect your home and your relationship?</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Create a professional cohabitation agreement in 5 minutes — covering finances,
-            property, pets, and separation terms. Free, no lawyer needed.
+            property, pets, and separation terms. Free and easy to use.
           </p>
           <Link
             href="/"

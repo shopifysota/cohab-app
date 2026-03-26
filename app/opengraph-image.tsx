@@ -85,7 +85,7 @@ export default function Image() {
             maxWidth: "800px",
           }}
         >
-          Create a professional agreement in 5 minutes. No lawyer needed.
+          Create a professional agreement in 5 minutes. Free and easy to use.
         </div>
 
         {/* Bottom bar */}
