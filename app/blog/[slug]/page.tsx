@@ -100,10 +100,10 @@ function renderContent(raw: string) {
   });
 }
 
-/** Handle **bold**, [text](url), **[bold link](url)**, and inline code */
+/** Handle **bold**, *italic*, [text](url), **[bold link](url)**, and inline code */
 function renderInline(text: string): React.ReactNode {
-  // Split on bold-wrapped links, standalone links, and bold text
-  const parts = text.split(/(\*\*\[[^\]]+\]\([^)]+\)\*\*|\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  // Split on bold-wrapped links, standalone links, bold text, and italic text
+  const parts = text.split(/(\*\*\[[^\]]+\]\([^)]+\)\*\*|\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\)|\*[^*]+\*)/g);
   return parts.map((part, i) => {
     // Bold-wrapped link: **[text](url)**
     const boldLinkMatch = part.match(/^\*\*\[([^\]]+)\]\(([^)]+)\)\*\*$/);
@@ -118,6 +118,10 @@ function renderInline(text: string): React.ReactNode {
     }
     if (part.startsWith("**") && part.endsWith("**")) {
       return <strong key={i}>{part.slice(2, -2)}</strong>;
+    }
+    // Italic: *text*
+    if (part.startsWith("*") && part.endsWith("*") && !part.startsWith("**")) {
+      return <em key={i}>{part.slice(1, -1)}</em>;
     }
     const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (linkMatch) {
