@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Shield,
@@ -79,11 +80,12 @@ const initialForm = {
   includeTechnology: false,
 };
 
-function SectionHeader({ title, description }: { title: string; description: string }) {
+function SectionHeader({ title, description, tip }: { title: string; description: string; tip?: string }) {
   return (
     <div className="space-y-1">
       <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
       <p className="text-sm text-muted-foreground">{description}</p>
+      {tip ? <p className="text-xs text-muted-foreground">{tip}</p> : null}
     </div>
   );
 }
@@ -153,12 +155,16 @@ export default function CohabitationAgreementGenerator() {
   const [step, setStep] = useState(0);
   const [form, setForm] = useState(initialForm);
   const [error, setError] = useState("");
+  const [worksheetCustom, setWorksheetCustom] = useState("");
+  const [worksheetExtra, setWorksheetExtra] = useState<string[]>([]);
+  const [worksheetSelections, setWorksheetSelections] = useState<Record<string, string>>({});
 
-  // Calculate total steps (always 6 pages: partners, home, money, property, separation, review)
-  const getTotalSteps = () => 6;
+  const getTotalSteps = () => (form.includeLifestyle ? 7 : 6);
 
   const getCurrentStepName = (stepIndex: number) => {
-    const baseSteps = ["Partners", "Home", "Money", form.includeLifestyle ? "Property + Lifestyle" : "Property", "Separation", "Review"];
+    const baseSteps = ["Partners", "Home", "Money", "Property"];
+    if (form.includeLifestyle) baseSteps.push("Lifestyle");
+    baseSteps.push("Separation", "Review");
     return baseSteps[stepIndex] || "Review";
   };
 
@@ -178,6 +184,35 @@ export default function CohabitationAgreementGenerator() {
     const a = document.createElement("a");
     a.href = url;
     a.download = "cohabitation-agreement.txt";
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const downloadWorksheet = () => {
+    const lines = [
+      "Cohabitation Conversation Workbook",
+      "\n",
+      "1. What do we agree on for shared expenses?",
+      `   - ${worksheetSelections["budgetStyle"] || "[select one]"}`,
+      "\n",
+      "2. Decision making style:",
+      `   - ${worksheetSelections["decisionProcess"] || "[select one]"}`,
+      "\n",
+      "3. Conflict handling:",
+      `   - ${worksheetSelections["conflictResolution"] || "[select one]"}`,
+      "\n",
+      "4. Add your own agreement topic:",
+      `   - ${worksheetCustom || "[custom option]"}`,
+      "\n",
+      "Extra items:",
+      ...worksheetExtra.map((item) => `   - ${item}`),
+    ].join("\n");
+
+    const blob = new Blob([lines], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "cohabitation-workbook.txt";
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -207,7 +242,24 @@ export default function CohabitationAgreementGenerator() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/40 p-4 md:p-8">
+    <div className="min-h-screen bg-gradient-to-b from-background to-muted/40">
+      {/* Top nav */}
+      <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-10">
+        <div className="mx-auto max-w-3xl px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-2 text-sm font-medium">
+            <Shield className="h-4 w-4" />
+            NestRules
+          </div>
+          <Link
+            href="/blog"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors underline-offset-4 hover:underline"
+          >
+            Blog
+          </Link>
+        </div>
+      </header>
+
+      <div className="p-4 md:p-8">
       {/* SEO Content - Hidden from users but visible to search engines */}
       <div className="sr-only">
         <h1>Cohabitation Agreement Generator - Free Legal Template Creator</h1>
@@ -257,6 +309,12 @@ export default function CohabitationAgreementGenerator() {
                   <p className="mt-3 max-w-2xl text-base text-muted-foreground md:text-lg">
                     Create a clear, fair cohabitation agreement in 5 minutes. No lawyer fees. Professional, legally sound, and ready to sign.
                   </p>
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    Looking for practical guidance first? <Link href="/blog" className="underline-offset-4 hover:underline">Visit the blog</Link>.
+                  </p>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      <button onClick={downloadWorksheet} className="text-blue-600 hover:underline">Download our conversation worksheet</button> to talk through expectations first.
+                    </p>
                 </div>
               </div>
               <div className="hidden rounded-2xl border bg-muted/60 p-3 lg:block">
@@ -284,23 +342,42 @@ export default function CohabitationAgreementGenerator() {
             <h2 className="text-2xl font-semibold tracking-tight">Why Cohabitation Agreements Matter</h2>
             <p className="mt-2 text-muted-foreground">Whether you're moving in together for the first time or after years of dating, a cohabitation agreement sets clear expectations—protecting both of you.</p>
             
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              <div>
-                <h3 className="font-semibold text-foreground">Avoids money conflicts</h3>
-                <p className="mt-1 text-sm text-muted-foreground">Decide upfront who pays rent, bills, and shared expenses. No surprises or resentment later.</p>
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+              <div className="sm:col-span-2">
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <h3 className="font-semibold text-foreground">Avoids money conflicts</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Decide upfront who pays rent, bills, and shared expenses. No surprises or resentment later.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Clarifies property ownership</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Document what you each own separately vs. jointly. Protects you both if the relationship ends.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Protects your independence</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">Define your own boundaries around finances, career, and personal life. Healthy relationships need transparency.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">Saves thousands in lawyers</h3>
+                    <p className="mt-1 text-sm text-muted-foreground">A lawyer charges $500–$2,000+. You get a professional agreement here in 5 minutes, free.</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-foreground">Clarifies property ownership</h3>
-                <p className="mt-1 text-sm text-muted-foreground">Document what you each own separately vs. jointly. Protects you both if the relationship ends.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground">Protects your independence</h3>
-                <p className="mt-1 text-sm text-muted-foreground">Define your own boundaries around finances, career, and personal life. Healthy relationships need transparency.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground">Saves thousands in lawyers</h3>
-                <p className="mt-1 text-sm text-muted-foreground">A lawyer charges $500–$2,000+. You get a professional agreement here in 5 minutes, free.</p>
-              </div>
+              <aside className="rounded-2xl border border-indigo-200 bg-white p-4 shadow-sm">
+                <h3 className="text-lg font-semibold">Partner conversation guide</h3>
+                <p className="mt-2 text-sm text-muted-foreground">Use this mini worksheet for communication style, shared decision-making, and expectations before finalizing your agreement.</p>
+                <ul className="mt-3 list-disc pl-5 text-sm text-muted-foreground space-y-1">
+                  <li>Agree on how to talk when money gets tight</li>
+                  <li>Pick check-in frequency (weekly, monthly, or as needed)</li>
+                  <li>Document guest, chore, and shared property norms</li>
+                </ul>
+                <Button onClick={downloadWorksheet} className="mt-4 w-full text-sm font-semibold">
+                  Download conversation worksheet
+                </Button>
+                <p className="mt-3 text-xs text-muted-foreground">
+                  Notarization is optional but strongly encouraged for extra confidence. Strongly encouraged, but not a replacement for legal advice.
+                </p>
+              </aside>
             </div>
           </div>
 
@@ -324,6 +401,7 @@ export default function CohabitationAgreementGenerator() {
                       <Users className="h-5 w-5 text-blue-600" />
                     </div>
                     <SectionHeader title="Who is this agreement for?" description="Start with the partners' names and contact information." />
+                                      <SectionHeader title="Who is this agreement for?" description="Start with the partners' names and contact information." tip="Tip: Add contact info if you want it included in the final document." />
                   </div>
                   <div className="grid gap-4 md:grid-cols-2">
                     <div className="space-y-2">
@@ -333,6 +411,91 @@ export default function CohabitationAgreementGenerator() {
                     <div className="space-y-2">
                       <Label>Partner two</Label>
                       <Input value={form.partnerTwo} onChange={(e) => update("partnerTwo", e.target.value)} placeholder="Alex Morgan" />
+                    </div>
+                  </div>
+
+                  <div className="rounded-2xl border border-blue-200 bg-blue-50 p-4 mt-4">
+                    <h3 className="text-lg font-semibold">Conversation guide + worksheet</h3>
+                    <p className="text-sm text-muted-foreground">Use this quick workbook to align on habits and expectations before you finish your agreement.</p>
+
+                    <div className="mt-3 space-y-3 text-sm">
+                      <div>
+                        <Label className="text-xs">1. Money & household expense style</Label>
+                        <select
+                          value={worksheetSelections.budgetStyle || ""}
+                          onChange={(e) => setWorksheetSelections((prev) => ({ ...prev, budgetStyle: e.target.value }))}
+                          className="mt-1 w-full rounded-md border p-2"
+                        >
+                          <option value="">Select one</option>
+                          <option value="Split equally">Split equally</option>
+                          <option value="Proportional to income">Proportional to income</option>
+                          <option value="Shared account with monthly reconciliation">Shared account with monthly reconciliation</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <Label className="text-xs">2. Decision making</Label>
+                        <select
+                          value={worksheetSelections.decisionProcess || ""}
+                          onChange={(e) => setWorksheetSelections((prev) => ({ ...prev, decisionProcess: e.target.value }))}
+                          className="mt-1 w-full rounded-md border p-2"
+                        >
+                          <option value="">Select one</option>
+                          <option value="Joint consensus">Joint consensus</option>
+                          <option value="Lead partner for certain areas">Lead partner for certain areas</option>
+                          <option value="Weekly check-ins and adjustments">Weekly check-ins and adjustments</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <Label className="text-xs">3. Disputes & communication</Label>
+                        <select
+                          value={worksheetSelections.conflictResolution || ""}
+                          onChange={(e) => setWorksheetSelections((prev) => ({ ...prev, conflictResolution: e.target.value }))}
+                          className="mt-1 w-full rounded-md border p-2"
+                        >
+                          <option value="">Select one</option>
+                          <option value="Talk first, then day to cool down">Talk first, then day to cool down</option>
+                          <option value="Use written list and choose top 2 priorities">Use written list and choose top 2 priorities</option>
+                          <option value="Mediation with friend/family or third-party">Mediation with friend/family or third-party</option>
+                        </select>
+                      </div>
+
+                      <div className="flex gap-2">
+                        <Input
+                          value={worksheetCustom}
+                          onChange={(e) => setWorksheetCustom(e.target.value)}
+                          placeholder="Add a custom topic (e.g. pet care schedule)"
+                          className="flex-1"
+                        />
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => {
+                            if (worksheetCustom.trim()) {
+                              setWorksheetExtra((prev) => [...prev, worksheetCustom.trim()]);
+                              setWorksheetCustom("");
+                            }
+                          }}
+                        >
+                          Add
+                        </Button>
+                      </div>
+
+                      {worksheetExtra.length > 0 && (
+                        <div className="rounded-lg border border-blue-200 bg-white p-2 text-xs">
+                          <p className="font-medium">Extra items:</p>
+                          <ul className="list-disc pl-5">
+                            {worksheetExtra.map((item, index) => (
+                              <li key={`${item}-${index}`}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      <Button onClick={downloadWorksheet} className="w-full text-sm font-semibold mt-2">
+                        Download Worksheet
+                      </Button>
                     </div>
                   </div>
 
@@ -390,6 +553,7 @@ export default function CohabitationAgreementGenerator() {
                       <Home className="h-5 w-5 text-green-600" />
                     </div>
                     <SectionHeader title="Where will you live together?" description="Add the shared home details and intended move-in date." />
+                                      <SectionHeader title="Where will you live together?" description="Add the shared home details and intended move-in date." tip="Tip: This establishes the legal address for your agreement." />
                   </div>
                   <div className="space-y-2">
                     <Label>Address</Label>
@@ -415,7 +579,36 @@ export default function CohabitationAgreementGenerator() {
                       <DollarSign className="h-5 w-5 text-yellow-600" />
                     </div>
                     <SectionHeader title="How will expenses work?" description="Capture the main financial arrangements." />
+                                      <SectionHeader title="How will expenses work?" description="Capture the main financial arrangements." tip="Tip: Use the presets above for quick setup, then customize as needed." />
                   </div>
+
+                  <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
+                    <Label className="text-sm font-semibold">Common expense setup</Label>
+                    <p className="text-xs text-muted-foreground">Pick a starting split and adjust the fields below as needed.</p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <Button size="sm" onClick={() => {
+                          update("rentMortgageSplit", "50/50 split");
+                          update("utilitiesSplit", "Utilities split equally (50/50)");
+                          update("bankAccounts", "Separate unless otherwise agreed in writing");
+                        }}>
+                        Equal split
+                      </Button>
+                      <Button size="sm" onClick={() => {
+                          update("rentMortgageSplit", "Proportional to income");
+                          update("utilitiesSplit", "Proportional to income based on earnings");
+                          update("bankAccounts", "Joint account for shared bills + separate personal accounts");
+                        }}>
+                        Income-based split
+                      </Button>
+                      <Button size="sm" onClick={() => {
+                          update("rentMortgageSplit", "Custom split: ...");
+                          update("utilitiesSplit", "Custom split: ...");
+                        }}>
+                        Custom split (describe)
+                      </Button>
+                    </div>
+                  </div>
+
                   <div className="space-y-2">
                     <Label>Rent or mortgage split</Label>
                     <Textarea value={form.rentMortgageSplit} onChange={(e) => update("rentMortgageSplit", e.target.value)} placeholder="50/50 split, paid monthly on the 1st" />
@@ -438,6 +631,7 @@ export default function CohabitationAgreementGenerator() {
                       <FileText className="h-5 w-5 text-purple-600" />
                     </div>
                     <SectionHeader title="Who owns what?" description="Document property, debts, and pets." />
+                                      <SectionHeader title="Who owns what?" description="Document property, debts, and pets." tip="Tip: Defaults are pre-filled; edit to match your situation." />
                   </div>
                   <div className="space-y-2">
                     <Label>Property owned before moving in</Label>
@@ -463,7 +657,7 @@ export default function CohabitationAgreementGenerator() {
                         className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900"
                       >
                         <Plus className="h-4 w-4" />
-                        Add lifestyle & living arrangements (communication, guests, cleaning, etc.)
+                        Add lifestyle & living arrangements (optional)
                       </button>
                     </div>
                   )}
@@ -471,75 +665,69 @@ export default function CohabitationAgreementGenerator() {
                   {form.includeLifestyle && (
                     <div className="rounded-lg border border-green-200 bg-green-50 p-4 mt-4">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm font-medium text-green-800">✓ Lifestyle section added</span>
+                        <span className="text-sm font-medium text-green-800">✓ Lifestyle section activated</span>
                         <button
                           onClick={() => update("includeLifestyle", false)}
-                          className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700"
-                        >
-                          <Minus className="h-4 w-4" />
-                          Remove lifestyle section
-                        </button>
-                      </div>
-                      <p className="text-xs text-green-700">You'll be able to add communication preferences, household rules, and more in the next step.</p>
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {step === 3 && form.includeLifestyle && (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="rounded-full bg-pink-100 p-2">
-                      <Heart className="h-5 w-5 text-pink-600" />
-                    </div>
-                    <SectionHeader title="How will we live together?" description="Add lifestyle and daily living arrangements." />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Communication & decision making</Label>
-                    <Textarea value={form.communication} onChange={(e) => update("communication", e.target.value)} placeholder="How will we communicate about important decisions? Weekly check-ins?" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Guests & visitors</Label>
-                    <Textarea value={form.guests} onChange={(e) => update("guests", e.target.value)} placeholder="Rules about having guests over, overnight stays, etc." />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Quiet hours & household rules</Label>
-                    <Textarea value={form.quietHours} onChange={(e) => update("quietHours", e.target.value)} placeholder="Quiet hours, noise levels, smoking, alcohol policies" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Cleaning & maintenance</Label>
-                    <Textarea value={form.cleaning} onChange={(e) => update("cleaning", e.target.value)} placeholder="Who handles cleaning? Chore schedules? Repairs?" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label>Vacation & time away</Label>
-                    <Textarea value={form.vacation} onChange={(e) => update("vacation", e.target.value)} placeholder="How much notice for trips? Vacation time sharing?" />
-                  </div>
-
-                  {form.includeTechnology && (
-                    <div className="space-y-2 border-t pt-4">
-                      <div className="flex items-center justify-between">
-                        <Label className="text-base font-medium">Technology & shared accounts</Label>
-                        <button
-                          onClick={() => update("includeTechnology", false)}
                           className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700"
                         >
                           <Minus className="h-4 w-4" />
                           Remove
                         </button>
                       </div>
-                      <Textarea value={form.technology} onChange={(e) => update("technology", e.target.value)} placeholder="Shared devices, streaming accounts, passwords, internet bills" />
+                      <p className="text-xs text-green-700">Lifestyle inputs are on the next step if activated.</p>
                     </div>
                   )}
                 </div>
               )}
 
-              {step === 4 && (
+              {step === 4 && form.includeLifestyle && (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="rounded-full bg-pink-100 p-2">
+                      <Heart className="h-5 w-5 text-pink-600" />
+                    </div>
+                    <SectionHeader title="Lifestyle & household" description="Add communication, guests, cleaning, and shared digital/insurance details." />
+                                      <SectionHeader title="Lifestyle & household" description="Add communication, guests, cleaning, and shared digital/insurance details." tip="Tip: Optional section — skip if you prefer to keep things simple." />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Communication & decision making</Label>
+                    <Textarea value={form.communication} onChange={(e) => update("communication", e.target.value)} placeholder="How will we communicate about important decisions?" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Guests & visitors</Label>
+                    <Textarea value={form.guests} onChange={(e) => update("guests", e.target.value)} placeholder="Rules for visitors and overnight stays" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Quiet hours & household rules</Label>
+                    <Textarea value={form.quietHours} onChange={(e) => update("quietHours", e.target.value)} placeholder="Noise, pets, shared areas" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Cleaning & maintenance</Label>
+                    <Textarea value={form.cleaning} onChange={(e) => update("cleaning", e.target.value)} placeholder="Chore schedule and repair responsibilities" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Vacation & time away</Label>
+                    <Textarea value={form.vacation} onChange={(e) => update("vacation", e.target.value)} placeholder="Travel notifications and guest coverage" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Technology & shared accounts</Label>
+                    <Textarea value={form.technology} onChange={(e) => update("technology", e.target.value)} placeholder="Internet, streaming, passwords" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label>Insurance & emergency funds</Label>
+                    <Textarea value={form.insurance} onChange={(e) => update("insurance", e.target.value)} placeholder="Renters, health, auto, savings" />
+                  </div>
+                </div>
+              )}
+
+              {(step === 4 && !form.includeLifestyle) || (step === 5 && form.includeLifestyle) ? (
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="rounded-full bg-orange-100 p-2">
                       <AlertTriangle className="h-5 w-5 text-orange-600" />
                     </div>
                     <SectionHeader title="What happens if things change?" description="Add move-out and dispute-resolution terms." />
+                                      <SectionHeader title="What happens if things change?" description="Add move-out and dispute-resolution terms." tip="Tip: Defaults provide fair starting points; customize for your needs." />
                   </div>
                   <div className="space-y-2">
                     <Label>Breakup or move-out terms</Label>
@@ -554,20 +742,21 @@ export default function CohabitationAgreementGenerator() {
                     <Textarea value={form.extraTerms} onChange={(e) => update("extraTerms", e.target.value)} placeholder="Optional: confidentiality, notices, furniture, parking, guests..." rows={4} />
                   </div>
                 </div>
-              )}
+              ) : null}
 
-              {step === 5 && (
+              {(step === 5 && !form.includeLifestyle) || (step === 6 && form.includeLifestyle) ? (
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="rounded-full bg-emerald-100 p-2">
                       <Eye className="h-5 w-5 text-emerald-600" />
                     </div>
                     <SectionHeader title="Review and download" description="Your agreement is ready. Download it in your preferred format." />
+                                      <SectionHeader title="Review and download" description="Your agreement is ready. Download it in your preferred format." tip="Tip: Print and sign in person for best results." />
                   </div>
                   {error ? <div className="rounded-2xl border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900">{error}</div> : null}
                   <AgreementPreview content={agreementText} />
                 </div>
-              )}
+              ) : null}
 
               <div className="flex flex-col gap-4 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
                 <div className="text-xs text-muted-foreground">
@@ -614,6 +803,7 @@ export default function CohabitationAgreementGenerator() {
             </CardContent>
           </Card>
         </motion.div>
+      </div>
       </div>
     </div>
   );
