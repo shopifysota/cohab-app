@@ -357,8 +357,7 @@ export default function CohabitationAgreementGenerator() {
                     <div className="rounded-full bg-blue-100 p-2">
                       <Users className="h-5 w-5 text-blue-600" />
                     </div>
-                    <SectionHeader title="Who is this agreement for?" description="Start with the partners' names and contact information." />
-                                      <SectionHeader title="Who is this agreement for?" description="Start with the partners' names and contact information." tip="Tip: Add contact info if you want it included in the final document." />
+                    <SectionHeader title="Who is this agreement for?" description="Start with the partners' names and contact information." tip="Tip: Add contact info if you want it included in the final document." />
                   </div>
                   <div className="grid gap-4 md:grid-cols-2">
                     <div className="space-y-2">
@@ -424,8 +423,7 @@ export default function CohabitationAgreementGenerator() {
                     <div className="rounded-full bg-green-100 p-2">
                       <Home className="h-5 w-5 text-green-600" />
                     </div>
-                    <SectionHeader title="Where will you live together?" description="Add the shared home details and intended move-in date." />
-                                      <SectionHeader title="Where will you live together?" description="Add the shared home details and intended move-in date." tip="Tip: This establishes the legal address for your agreement." />
+                    <SectionHeader title="Where will you live together?" description="Add the shared home details and intended move-in date." tip="Tip: This establishes the address for your agreement." />
                   </div>
                   <div className="space-y-2">
                     <Label>Address</Label>
@@ -450,8 +448,7 @@ export default function CohabitationAgreementGenerator() {
                     <div className="rounded-full bg-yellow-100 p-2">
                       <DollarSign className="h-5 w-5 text-yellow-600" />
                     </div>
-                    <SectionHeader title="How will expenses work?" description="Capture the main financial arrangements." />
-                                      <SectionHeader title="How will expenses work?" description="Capture the main financial arrangements." tip="Tip: Use the presets above for quick setup, then customize as needed." />
+                    <SectionHeader title="How will expenses work?" description="Capture the main financial arrangements." tip="Tip: Use the presets above for quick setup, then customize as needed." />
                   </div>
 
                   <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
@@ -502,8 +499,7 @@ export default function CohabitationAgreementGenerator() {
                     <div className="rounded-full bg-purple-100 p-2">
                       <FileText className="h-5 w-5 text-purple-600" />
                     </div>
-                    <SectionHeader title="Who owns what?" description="Document property, debts, and pets." />
-                                      <SectionHeader title="Who owns what?" description="Document property, debts, and pets." tip="Tip: Defaults are pre-filled; edit to match your situation." />
+                    <SectionHeader title="Who owns what?" description="Document property, debts, and pets." tip="Tip: Defaults are pre-filled; edit to match your situation." />
                   </div>
                   <div className="space-y-2">
                     <Label>Property owned before moving in</Label>
@@ -558,8 +554,7 @@ export default function CohabitationAgreementGenerator() {
                     <div className="rounded-full bg-pink-100 p-2">
                       <Heart className="h-5 w-5 text-pink-600" />
                     </div>
-                    <SectionHeader title="Lifestyle & household" description="Add communication, guests, cleaning, and shared digital/insurance details." />
-                                      <SectionHeader title="Lifestyle & household" description="Add communication, guests, cleaning, and shared digital/insurance details." tip="Tip: Optional section — skip if you prefer to keep things simple." />
+                    <SectionHeader title="Lifestyle & household" description="Add communication, guests, cleaning, and shared digital/insurance details." tip="Tip: Optional section — skip if you prefer to keep things simple." />
                   </div>
                   <div className="space-y-2">
                     <Label>Communication & decision making</Label>
@@ -598,8 +593,7 @@ export default function CohabitationAgreementGenerator() {
                     <div className="rounded-full bg-orange-100 p-2">
                       <AlertTriangle className="h-5 w-5 text-orange-600" />
                     </div>
-                    <SectionHeader title="What happens if things change?" description="Add move-out and dispute-resolution terms." />
-                                      <SectionHeader title="What happens if things change?" description="Add move-out and dispute-resolution terms." tip="Tip: Defaults provide fair starting points; customize for your needs." />
+                    <SectionHeader title="What happens if things change?" description="Add move-out and dispute-resolution terms." tip="Tip: Defaults provide fair starting points; customize for your needs." />
                   </div>
                   <div className="space-y-2">
                     <Label>Breakup or move-out terms</Label>
@@ -622,8 +616,7 @@ export default function CohabitationAgreementGenerator() {
                     <div className="rounded-full bg-emerald-100 p-2">
                       <Eye className="h-5 w-5 text-emerald-600" />
                     </div>
-                    <SectionHeader title="Review and download" description="Your agreement is ready. Download it in your preferred format." />
-                                      <SectionHeader title="Review and download" description="Your agreement is ready. Download it in your preferred format." tip="Tip: Print and sign in person for best results." />
+                    <SectionHeader title="Review and download" description="Your agreement is ready. Download it in your preferred format." tip="Tip: Print and sign in person for best results." />
                   </div>
                   {error ? <div className="rounded-2xl border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900">{error}</div> : null}
                   <AgreementPreview content={agreementText} />
