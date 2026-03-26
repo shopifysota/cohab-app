@@ -486,6 +486,14 @@ export default function CohabitationAgreementGenerator() {
                 </div>
               )}
 
+              {step === 3 && form.includeLifestyle && (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="rounded-full bg-pink-100 p-2">
+                      <Heart className="h-5 w-5 text-pink-600" />
+                    </div>
+                    <SectionHeader title="How will we live together?" description="Add lifestyle and daily living arrangements." />
+                  </div>
                   <div className="space-y-2">
                     <Label>Communication & decision making</Label>
                     <Textarea value={form.communication} onChange={(e) => update("communication", e.target.value)} placeholder="How will we communicate about important decisions? Weekly check-ins?" />
@@ -522,6 +530,8 @@ export default function CohabitationAgreementGenerator() {
                       <Textarea value={form.technology} onChange={(e) => update("technology", e.target.value)} placeholder="Shared devices, streaming accounts, passwords, internet bills" />
                     </div>
                   )}
+                </div>
+              )}
 
               {step === 4 && (
                 <div className="space-y-4">
