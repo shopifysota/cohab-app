@@ -1679,6 +1679,750 @@ A cohabitation agreement helps here too: it reveals whether both partners are wi
 **[Create your household standards agreement →](/)** Our free cohabitation agreement generator includes a detailed chore and responsibilities section. Define the standards, split the tasks, and stop having the same argument every week.
     `.trim(),
   },
+  {
+    slug: "girlfriend-wants-to-get-a-cat-i-dont",
+    title: "My Girlfriend Wants a Cat — I Don't Want Any Pets in Our Apartment",
+    description: "A boyfriend writes in about the escalating pet debate and why 'we'll figure it out' isn't good enough when you disagree on animals in your shared home.",
+    date: "2026-03-22",
+    readingTime: "5 min read",
+    category: "Conflict",
+    content: `
+*"My girlfriend has been talking about getting a cat for months. I told her from the beginning that I don't want pets — I grew up without them, I'm mildly allergic, and I don't want the responsibility. She keeps sending me cat videos and saying things like 'you'll love it once it's here.' Last week she mentioned she'd already been looking at shelters. I feel like my opinion doesn't matter. If she brings a cat home, I honestly don't know what I'll do."* — Kevin, 31
+
+Kevin, your opinion absolutely matters. And right now, it's being slowly overwritten by a strategy that relies on you eventually caving.
+
+## Why this is bigger than a cat
+
+This isn't about whether cats are great (many people think so) or whether you're being unreasonable (you're not). This is about a fundamental question: **can one partner make a major household decision without the other's consent?**
+
+The answer should be no. But it happens constantly — because the partner who wants the thing keeps pushing, and the partner who doesn't want it eventually stops resisting out of exhaustion or guilt.
+
+That's not a compromise. That's attrition.
+
+## What "you'll love it once it's here" really means
+
+It means:
+- "Your current opinion isn't the one I want, so I'm waiting for it to change"
+- "I believe my desire outweighs your boundary"
+- "I plan to do this whether you agree or not — I'm just managing your resistance"
+
+This pattern shows up in pet decisions, guest policies, spending habits, moving plans, and more. The underlying dynamic is always the same: one partner treats the other's clearly stated position as temporary.
+
+## What you should do right now
+
+### 1. State your position clearly, in writing
+
+Not as punishment — as clarity. Something like: "I've told you multiple times that I don't want a pet in our home. That position hasn't changed. I need you to respect that boundary, not try to wear it down."
+
+### 2. Ask her to state hers
+
+If she genuinely needs a pet to be happy, that's fair — and that's important information about compatibility. But she needs to say it directly, not through passive persuasion.
+
+### 3. Discuss the what-ifs before they arrive
+
+What if she adopts a cat anyway? Who pays for vet bills, supplies, deposits? Who is responsible for care? What happens if the cat damages the apartment? What if you break up — who takes the animal?
+
+These aren't hypothetical questions. They're the exact questions that create chaos when left unanswered.
+
+### 4. Put the agreement on paper
+
+A cohabitation agreement can include a specific pet clause — whether pets are allowed, under what conditions, who is responsible for costs and care, and who retains ownership if the relationship ends.
+
+This isn't unromantic. It's responsible. And it protects both of you from an outcome neither wanted.
+
+## The deeper pattern
+
+Kevin, the cat debate is likely a preview. If your girlfriend is willing to override your clearly stated boundaries on pets, watch for the same pattern in finances, guests, career decisions, and living arrangements.
+
+Healthy relationships don't work on attrition. They work on mutual agreement. And mutual agreement starts with both people accepting that "no" is a complete answer.
+
+**[Create a clear pet and household agreement →](/)** Our free cohabitation agreement generator includes specific pet ownership clauses. Define the policy before it becomes a conflict.
+    `.trim(),
+  },
+  {
+    slug: "my-partner-never-wants-anyone-over",
+    title: "My Partner Never Wants Anyone Over — I Feel Isolated in My Own Home",
+    description: "A partner writes in about the slow isolation of living with someone who treats every visitor as an intrusion.",
+    date: "2026-03-20",
+    readingTime: "5 min read",
+    category: "Conflict",
+    content: `
+*"Every time I invite a friend over, my partner gets visibly annoyed. They'll disappear into the bedroom, make comments about noise, or bring it up the next day as if I did something wrong. I've stopped inviting people over entirely. I feel like I'm living in someone else's house, not ours. I miss my friends. I miss feeling like this is my home too."* — Sam, 34
+
+Sam, what you're describing isn't a preference difference — it's a control pattern that's slowly shrinking your world. And the worst part is it happened so gradually that you accepted it as normal.
+
+## The isolation trap
+
+Here's how it typically works:
+
+1. Partner expresses discomfort about guests (reasonable, sometimes)
+2. You reduce how often people come over (short-term accommodation)
+3. Partner continues to react negatively even to reduced visits
+4. You stop inviting anyone over entirely (long-term surrender)
+5. Your social life narrows to only what happens outside the apartment
+6. Eventually even going out gets questioned or resented
+
+If you're at step 4 or 5, recognize that this is no longer about introversion or personal space. It's about one person exercising veto power over the other's social life.
+
+## Both partners have rights in a shared home
+
+Your partner has the right to:
+- Reasonable quiet and personal space
+- Advance notice before guests arrive
+- Input on overnight visitors and frequency
+
+You have the right to:
+- Host friends in your own home
+- Maintain your social connections
+- Feel comfortable inviting people over without guilt or punishment
+
+Neither partner's rights cancel the other's. But right now, only one set of rights is being honored.
+
+## What actually works
+
+### 1. Establish a guest policy together
+
+| Topic | Example Agreement |
+|-------|-------------------|
+| Advance notice | 24 hours for planned visits, text for spontaneous |
+| Frequency | Up to 2 visits per week per partner |
+| Quiet hours | No guests after 10 PM on weeknights |
+| Overnight guests | Requires mutual agreement, max 3 nights |
+| Shared spaces | Living room and kitchen are guest-friendly; bedroom is private |
+
+### 2. Write it into your household agreement
+
+When the policy is written, it stops being negotiated in the moment. You don't need permission to have a friend over on Saturday afternoon if the agreement already says that's fine.
+
+### 3. Both partners must follow it
+
+This protects both of you. Your partner knows they won't have unexpected guests during quiet hours. You know you won't be made to feel guilty for having a friend over during agreed times.
+
+### 4. Revisit if it's not working
+
+Monthly check-ins matter. Maybe the frequency feels too high for one person or too low for the other. Adjust — but don't abandon entirely because one partner is uncomfortable with compromise.
+
+## When it's not about introversion
+
+Sam, some partners are genuinely introverted and need clear boundaries around social energy in shared spaces. That's valid and workable.
+
+But if your partner reacts negatively to *any* visitor, *any* time, and uses their discomfort to veto your right to host anyone — that's isolation, not introversion. And it's worth having a direct conversation about whether they're willing to share the home with your social life, not just your presence.
+
+**[Build a guest and household policy agreement →](/)** Our free cohabitation agreement generator includes guest policies, quiet hours, and shared space rules. Define expectations before resentment builds.
+    `.trim(),
+  },
+  {
+    slug: "boyfriend-keeps-lending-money-to-his-family",
+    title: "My Boyfriend Keeps Lending Money to His Family — We Can't Save Anything",
+    description: "A girlfriend writes in about the impossible position of watching shared financial goals evaporate because of undiscussed family obligations.",
+    date: "2026-03-18",
+    readingTime: "6 min read",
+    category: "Money",
+    content: `
+*"My boyfriend sends money to his parents and siblings constantly. $200 here, $500 there. He never tells me beforehand — I find out when I check our shared expenses spreadsheet or when he says he 'can't cover his half' that month. We're trying to save for a bigger apartment, but we haven't put anything in our savings fund in three months. I don't want to seem heartless about his family, but I'm exhausted and broke."* — Jade, 28
+
+Jade, you're not heartless. You're a person who made financial plans with a partner who is honoring separate obligations without including you in the conversation.
+
+## The two problems here
+
+**Problem 1: Undisclosed spending.** Money is leaving your household budget without your knowledge or input. Whether it goes to family, hobbies, or anything else — if it affects shared financial goals, it requires shared discussion.
+
+**Problem 2: Family obligations without boundaries.** Your boyfriend may feel a deep sense of duty to support his family. That's understandable and common across many cultures. But when that duty has no ceiling and no transparency, it will consume every shared financial goal you set.
+
+## Why "it's my money" doesn't apply here
+
+When two people share a household, share expenses, and share savings goals, every major recurring expense affects both partners. Your boyfriend's $500 gift to his brother is also $500 not going toward your shared savings goal. It's also potentially $500 that means you cover more of the rent that month.
+
+"Personal money" is the amount left over *after* shared obligations are met. Not before.
+
+## What to put in a financial agreement
+
+### 1. Define shared obligations first
+
+Rent, utilities, groceries, insurance, and savings contributions come off the top — before anything else. These are non-negotiable monthly commitments.
+
+### 2. Set a personal spending threshold
+
+Each partner gets a defined amount of personal money per month — no questions asked. If your boyfriend wants to send his family money from his personal allocation, that's his decision. But it can't come from the shared pool.
+
+### 3. Create a disclosure rule for large amounts
+
+Any personal expenditure above a defined amount — say $150 — requires a heads-up to the other partner. Not permission — notification. This prevents the "I found out when his half didn't show up" scenario.
+
+### 4. Protect savings contributions
+
+Your shared savings goal should be treated like a bill. It gets paid monthly, on schedule, before personal spending. If either partner can't make their contribution, the other partner needs to know immediately.
+
+## The conversation framework
+
+Don't frame it as "stop helping your family." That's a losing argument and it's not what you want. What you want is:
+
+1. Transparency about where money goes
+2. Shared goals funded before personal gifts
+3. A ceiling on family financial support that both of you agree on
+4. Advance notice before large sums leave the household
+
+These are reasonable expectations. If your boyfriend frames them as controlling or insensitive, he's telling you that his family's needs will always come before your shared plans — and you deserve to know that clearly.
+
+## What happens without an agreement
+
+Without written financial terms, this pattern will repeat:
+- He'll send money whenever asked
+- Your savings will stall
+- You'll cover more than your share to keep things running
+- Resentment will build until it breaks something
+
+A written agreement doesn't make you the bad guy. It makes both of you accountable to the plan you both said you wanted.
+
+**[Create a financial boundaries agreement →](/)** Our free cohabitation agreement generator covers expense splits, savings goals, personal spending limits, and financial disclosure requirements.
+    `.trim(),
+  },
+  {
+    slug: "we-both-work-from-home-and-its-ruining-us",
+    title: "We Both Work From Home and It's Slowly Ruining Our Relationship",
+    description: "A partner writes in about the suffocating reality of spending 24/7 together without boundaries, space, or silence.",
+    date: "2026-03-16",
+    readingTime: "5 min read",
+    category: "Conflict",
+    content: `
+*"My partner and I both work remotely. We share a one-bedroom apartment. We wake up together, eat every meal together, work 10 feet from each other, and go to bed together. There is no separation. I love them, but I am losing my mind. I can hear every phone call. They can see my screen. We interrupt each other constantly. By evening we have nothing to talk about because we've been together literally all day. Last night I sat in my car in the parking lot for 40 minutes just to be alone."* — Morgan, 29
+
+Morgan, sitting in your car to get solitude is not a personality flaw — it's a symptom of a living arrangement that has no structure around personal space. And you're far from alone in this.
+
+## Why 24/7 together doesn't work
+
+Relationships need space. Not because you don't like each other, but because:
+
+- **Individual identity requires solo time.** You need moments where you are not someone's partner, just yourself.
+- **Conversation needs new input.** If you share every waking moment, there's nothing to share at the end of the day.
+- **Work requires focus.** Constant interruptions and ambient partner noise degrade both people's productivity and mood.
+- **Conflict needs distance.** Small irritations that would dissolve with a few hours apart instead compound into resentment.
+
+## The one-bedroom remote work survival plan
+
+### 1. Define work zones with visual boundaries
+
+You don't need separate rooms. You need defined territory:
+- One person works at the desk, the other at the dining table (or vice versa, alternating weekly)
+- Use headphones as a "do not disturb" signal — when they're on, no casual conversation
+- Face away from each other if possible — reducing visual awareness reduces interruption
+
+### 2. Create time blocks
+
+| Block | Rules |
+|-------|-------|
+| Morning focus (9–12) | No casual conversation, no shared tasks |
+| Lunch | Together or separate — each person chooses daily |
+| Afternoon focus (1–4) | Same as morning focus |
+| After work (5+) | Shared time, reconnection |
+
+### 3. Build in mandatory separation
+
+At least 3–4 times per week, one of you should leave the apartment. Work from a library, a coffee shop, a co-working space, or a friend's place. Alternate who goes.
+
+This isn't about escaping each other. It's about returning to each other with something to talk about.
+
+### 4. Protect evening conversation
+
+If you've been together all day, evenings feel empty. Fix this by:
+- Sharing one new thing you read, heard, or thought about during the day
+- Having dedicated phone-free time together (cooking, walking, a show)
+- Not rehashing the workday unless something notable happened
+
+### 5. Write it down
+
+Verbal space agreements don't hold because they feel weird to enforce in the moment. Written ones give both partners permission to say "it's focus time" without it feeling personal.
+
+## The car test
+
+Morgan, the fact that you sat in your car for 40 minutes tells you everything: you need boundaries, not couples therapy. You need structure, not space from your relationship.
+
+Most couples in your situation fix this within a week of implementing clear work zones, focus hours, and scheduled solo time. The relationship isn't broken — the floor plan just needs rules.
+
+**[Build a work-from-home and space agreement →](/)** Our free cohabitation agreement generator includes quiet hours, shared space rules, and household scheduling.
+    `.trim(),
+  },
+  {
+    slug: "my-boyfriend-wants-to-move-us-closer-to-his-job",
+    title: "My Boyfriend Wants to Move Us Closer to His Job — But I'd Lose My Commute, My Gym, and My Life",
+    description: "A girlfriend writes in about the one-sided relocation conversation where only one partner's convenience matters.",
+    date: "2026-03-14",
+    readingTime: "5 min read",
+    category: "Planning",
+    content: `
+*"My boyfriend got promoted and wants us to move to the other side of the city so he's closer to his office. He'd go from a 45-minute commute to 10 minutes. I'd go from 15 minutes to over an hour. Plus I'd lose my gym, my favorite coffee shop, my friend group that lives nearby — basically everything about the neighborhood I love. He keeps saying 'it's better for us' but it's really only better for him. I don't know how to say no without sounding selfish."* — Dani, 25
+
+Dani, saying "this move would make my life significantly worse" is not selfish. It's honest. And the fact that you feel guilty for stating it suggests that this relationship has a pattern of framing his needs as "our" needs.
+
+## The hidden math of relocation
+
+Your boyfriend sees: my commute drops by 35 minutes each way. That's over an hour saved daily.
+
+What he's not calculating:
+- **Your commute increases by 45+ minutes each way** — that's 1.5 hours of your life lost daily
+- **Net household impact**: he gains 70 min, you lose 90 min. The household is actually worse off
+- **Quality of life**: you lose your gym, social proximity, neighborhood familiarity
+- **Social cost**: your friend group becomes harder to access, reducing your support network
+
+When someone says "it's better for us," ask: better for us how? Run the actual numbers.
+
+## How to approach this conversation
+
+### 1. Present the full picture, not just feelings
+
+Create a simple comparison:
+
+| Factor | Current Location | Proposed Location |
+|--------|-----------------|-------------------|
+| His commute | 45 min | 10 min |
+| Your commute | 15 min | 60+ min |
+| Your gym | 5 min walk | 40 min drive |
+| Friends nearby | Yes | No |
+| Combined daily commute | 120 min | 140 min |
+
+When the numbers are visible, "better for us" falls apart.
+
+### 2. Propose alternatives
+
+- Can he negotiate hybrid or remote days to reduce his commute impact?
+- Is there a midpoint neighborhood that shortens both commutes?
+- Would he be willing to cover additional commute costs if you move (gas, transit, parking)?
+
+### 3. Discuss the decision-making process
+
+This is the real issue. How are major shared decisions made in your relationship? If the pattern is "he proposes, you accommodate," that needs to change — regardless of whether you move.
+
+### 4. Get it in writing
+
+If you do move, document the terms. Who pays moving costs? What's the lease commitment? If the new location doesn't work for you after 6 months, what's the exit plan? What if he changes jobs again?
+
+## The bigger question
+
+Dani, this isn't really about an apartment. It's about whether your preferences carry equal weight in the relationship. If his promotion means your life gets harder and the only acceptable response is "great, when do we move?" — that's not a partnership. That's one person with veto power.
+
+You're allowed to say: "I'm happy for your promotion. I'm not willing to move somewhere that makes my daily life significantly worse. Let's find a solution that works for both of us."
+
+That's not selfish. That's a complete sentence.
+
+**[Define your relocation and living terms →](/)** Our free cohabitation agreement generator covers housing decisions, financial splits, and what happens when circumstances change.
+    `.trim(),
+  },
+  {
+    slug: "partner-wants-an-open-relationship-after-moving-in",
+    title: "My Partner Brought Up an Open Relationship Three Weeks After We Signed a Lease",
+    description: "A partner writes in about the gut-punch of a major relationship change being proposed right after committing to shared housing.",
+    date: "2026-03-12",
+    readingTime: "5 min read",
+    category: "Conflict",
+    content: `
+*"Three weeks after we signed a 14-month lease together, my partner told me they want to 'explore' an open relationship. I was blindsided. We never discussed this before moving in. I asked if they'd been thinking about it for a while and they said 'a few months.' So they knew before we signed the lease and didn't tell me. Now I'm locked into housing with someone who wants something fundamentally different than what I agreed to. I feel trapped and deceived."* — Riley, 32
+
+Riley, your feelings are valid. You made a major financial and life commitment based on a shared understanding of what your relationship was. That understanding changed — and the timing wasn't accidental.
+
+## Why the timing matters
+
+Your partner thought about this for months. During that time, you were apartment hunting, signing a lease, moving, and settling in. At no point during any of that did they mention the one thing that would have fundamentally changed your decision.
+
+That's not "figuring out the right time." That's strategic withholding. Whether intentional or not, the effect is the same: you're now financially locked in, which makes it much harder to say no or leave.
+
+## Your options (they're better than you think)
+
+### 1. You can say no
+
+An open relationship requires enthusiastic consent from both partners. "No" is a complete answer. You don't need to justify, debate, or compromise on this if it's not what you want.
+
+### 2. You can address the deception separately
+
+Even if you were open to the idea in theory, the way this was handled is a separate problem. Your partner withheld significant information during a major shared decision. That's a trust issue that exists regardless of the open relationship question.
+
+### 3. You can exit the lease
+
+Most leases have early termination clauses — typically 1-2 months' rent as a penalty. It's expensive, but it's not imprisonment. Some options:
+- Negotiate with the landlord to find a replacement tenant
+- Sublease your portion (if the lease allows)
+- Pay the termination fee and leave
+- One partner stays and takes over the full lease
+
+### 4. You can stay while protecting yourself
+
+If you choose to stay for financial reasons, protect yourself:
+- Put in writing that you did not agree to an open relationship
+- Define clear boundaries for the remaining lease period
+- Set an exit date and savings plan
+- Document your financial contributions
+
+## What a cohabitation agreement would have prevented
+
+If you'd created a written agreement before signing the lease, you'd have:
+- A documented understanding of the relationship terms
+- A defined process for what happens if one partner wants to leave
+- Financial protections including how to split early termination costs
+- A clear framework that makes it harder for either partner to change the fundamental terms after commitment
+
+## The bigger picture
+
+Riley, this isn't about whether open relationships are right or wrong. It's about informed consent. You deserve to make major life decisions — like signing a 14-month lease — with full information. You didn't get that.
+
+Whatever you decide about the relationship, protect yourself financially. Document your contributions, understand your lease obligations, and have an exit plan.
+
+**[Create a cohabitation agreement with clear terms →](/)** Our free generator covers relationship expectations, lease responsibilities, and exit procedures. Define the terms before you commit.
+    `.trim(),
+  },
+  {
+    slug: "girlfriend-makes-fun-of-me-for-wanting-a-written-agreement",
+    title: "My Girlfriend Makes Fun of Me for Wanting a Written Agreement — Am I Overthinking This?",
+    description: "A boyfriend writes in about being mocked for wanting to put their living arrangement in writing before moving in together.",
+    date: "2026-03-10",
+    readingTime: "5 min read",
+    category: "Planning",
+    content: `
+*"I told my girlfriend I wanted us to write up a cohabitation agreement before we move in together next month. She laughed and said, 'What, you think we're going to break up?' Then she told her friends and they all said I was being 'corporate' about our relationship. I'm not planning for failure — I just want us to be on the same page about money and responsibilities. Now I feel embarrassed for even bringing it up."* — Marcus, 27
+
+Marcus, you are not overthinking this. You're doing the one thing that most couples who fight about money, chores, and property wish they'd done: you're trying to have the conversation before the problems start.
+
+## Why people resist written agreements
+
+Your girlfriend's reaction is incredibly common. Here's what's usually behind it:
+
+- **"If we need a contract, we don't trust each other."** This confuses trust with planning. You also trust each other and still have a lease — which is a legal contract.
+- **"Only people expecting to break up write agreements."** You also have car insurance without expecting to crash. Preparation isn't pessimism.
+- **"It's unromantic."** You know what's really unromantic? Fighting about who owes what for the couch after a breakup.
+
+The resistance isn't logical — it's emotional. Written agreements feel formal, and formality feels like distrust. But structure is what prevents the conversations that actually damage trust.
+
+## What to say to her
+
+### Frame it as a conversation tool, not a contract
+
+"I'm not worried about us breaking up. I want to make sure we never have the 'I thought you were paying for that' argument. Let's just spend 10 minutes writing down how we want to handle money and bills so we never have to fight about it."
+
+### Point out what she'd want documented
+
+Ask her:
+- "If we break up in two years, who keeps the furniture we buy together?"
+- "If one of us can't pay rent one month, what happens?"
+- "If you get a pet, who pays for vet bills?"
+
+These aren't morbid questions. They're the exact questions people google at 2 AM when things go wrong.
+
+### Don't apologize for wanting clarity
+
+You proposed something mature, responsible, and protective of both of you. The fact that it was met with mockery says more about the cultural stigma around planning than it does about your judgment.
+
+## What the research says
+
+Studies consistently show that couples who discuss and document financial expectations before cohabiting report:
+- Less financial conflict in the first year
+- Higher relationship satisfaction
+- Easier resolution when disagreements arise
+- Lower stress during separation (if it happens)
+
+You're not being corporate. You're being smart.
+
+## The real question
+
+Marcus, if your girlfriend won't have a 10-minute conversation about how you'll split rent and handle shared expenses, what will she do when those issues actually arise? Will she engage, or will she dismiss your concerns as overthinking then too?
+
+A partner who respects planning respects you. A partner who mocks your preparation is telling you they'd rather wing it — and deal with the consequences later, probably on your dime.
+
+**[Create your agreement in under 5 minutes →](/)** It's free, it's fast, and it's the conversation starter every couple needs before moving in together.
+    `.trim(),
+  },
+  {
+    slug: "i-cook-every-night-he-never-even-says-thank-you",
+    title: "I Cook Every Single Night and He Doesn't Even Say Thank You",
+    description: "A girlfriend writes in about the invisible labor of feeding two people daily — and the slow resentment that builds when effort is expected but never acknowledged.",
+    date: "2026-03-08",
+    readingTime: "5 min read",
+    category: "Conflict",
+    content: `
+*"I cook dinner every single night. I plan the meals, buy the groceries, prep the food, cook it, serve it, and clean up. My boyfriend eats, says 'thanks babe,' and goes to the couch. He's never once offered to cook. When I brought it up, he said he 'doesn't really know how to cook' — but he's 33. He managed to feed himself for a decade before we moved in together. I feel like his personal chef, not his partner."* — Layla, 29
+
+Layla, your frustration isn't about cooking. It's about a labor distribution so lopsided that one partner has become a full-time household service provider while the other has become a permanent guest in their own home.
+
+## The invisible labor breakdown
+
+Let's count the actual tasks embedded in "cooking dinner":
+
+1. **Meal planning** — deciding what to eat every day (mental labor)
+2. **Grocery shopping** — list, store, carrying, putting away
+3. **Prep** — washing, chopping, measuring, organizing
+4. **Cooking** — actual stove/oven time
+5. **Serving** — plating, setting the table
+6. **Cleaning** — dishes, counters, stove, packing leftovers
+
+That's six distinct tasks happening daily. Your boyfriend participates in zero of them. "Thanks babe" is not a contribution.
+
+## Why "I can't cook" is not an excuse at 33
+
+Your boyfriend is an adult. He has the internet, a phone, and presumably the ability to follow instructions. "I can't cook" at age 33 in a household where someone else does all the cooking translates to: "I've never needed to learn because someone else always does it for me."
+
+That's not a skill gap. That's a choice.
+
+## The fix
+
+### 1. Split the work, not just the cooking
+
+Not everyone needs to be a chef. But everyone can contribute:
+
+| Task | Partner A | Partner B |
+|------|-----------|-----------|
+| Meal planning | Alternating weeks | Alternating weeks |
+| Grocery shopping | Alternating weeks | Alternating weeks |
+| Cooking | Mon, Wed, Fri | Tue, Thu |
+| Weekend meals | Together or takeout | Together or takeout |
+| Dishes | Cook doesn't clean | Cook doesn't clean |
+
+The rule "whoever cooks doesn't clean" is simple and immediately splits the nightly burden.
+
+### 2. Start a grocery budget
+
+Track what you spend on groceries together. If one partner is funding all the food and doing all the work, that's a double inequity.
+
+### 3. Accept imperfection
+
+When he cooks, the food might not be great. That's fine. He'll learn. What matters is that the labor is shared, not that every meal is Instagram-worthy.
+
+### 4. Write it into your agreement
+
+When the cooking schedule is written down, it becomes an obligation — not a favor. No more "I forgot" or "I didn't know it was my turn." The agreement says it's Tuesday. It's his turn.
+
+## When the deeper issue is respect
+
+Layla, if you bring all this up and your boyfriend refuses to learn, refuses to plan, refuses to share the grocery costs, or cooks once and then gives up — the issue isn't cooking. The issue is that he's comfortable receiving daily service from you without reciprocating.
+
+That pattern doesn't fix itself. It either gets addressed with a clear agreement and mutual commitment, or it grows into resentment that poisons everything else.
+
+**[Build a fair household responsibilities agreement →](/)** Our free cohabitation agreement generator includes chore splits, financial contributions, and meal responsibilities. Define the expectations now.
+    `.trim(),
+  },
+  {
+    slug: "we-agreed-on-no-kids-now-he-changed-his-mind",
+    title: "We Agreed on No Kids — Now He's Changed His Mind and Wants Me to 'Reconsider'",
+    description: "A girlfriend writes in about the destabilizing experience of a partner reversing a fundamental life agreement after they've already built a shared life.",
+    date: "2026-03-06",
+    readingTime: "5 min read",
+    category: "Planning",
+    content: `
+*"Before we moved in together, my boyfriend and I agreed: no kids. It was one of our biggest compatibility points. We talked about travel, careers, saving money — all built around a child-free future. Two years later, he sat me down and said his feelings have changed and he 'can't imagine not being a father.' He asked me to 'keep an open mind.' I'm devastated. I haven't changed my mind. I feel like the entire foundation of our life together was just pulled out from under me."* — Priya, 36
+
+Priya, you're allowed to feel devastated. You made life decisions — where to live, career moves, financial plans — based on an agreement that your partner has now unilaterally reversed. That's not a small shift. It's a fundamental change to the terms of your relationship.
+
+## Why this feels like betrayal (even though it might not be)
+
+People are allowed to change. Feelings about parenthood genuinely shift over time. Your boyfriend may not have been lying two years ago — he may have truly felt that way and now feels differently.
+
+But here's the part that matters to you: **you built your life on the agreement you both made.** Changing his mind doesn't erase the impact of two years of shared planning built on a premise that no longer exists.
+
+## What "keep an open mind" actually asks
+
+When someone says "keep an open mind" about having children, they're asking you to:
+- Abandon a deeply held personal decision
+- Reconsider your entire life framework
+- Potentially sacrifice career plans, financial goals, and bodily autonomy
+- Do all of this because *their* feelings changed
+
+That's not keeping an open mind. That's rebuilding your identity to match someone else's new timeline. And you don't owe that to anyone.
+
+## Your options
+
+### 1. Restate your position clearly
+
+"My feelings haven't changed. I don't want children. I understand that yours have changed, and I'm not angry about that — but I need you to understand that this isn't something I'm reconsidering."
+
+### 2. Acknowledge incompatibility without blame
+
+If he truly wants children and you truly don't, that's a fundamental incompatibility. Neither of you is wrong. But pretending it will resolve itself is a guaranteed path to resentment from both sides.
+
+### 3. Set a timeline for the conversation
+
+Don't let this become an indefinite negotiation. Agree on a date — 2 to 4 weeks — to both think independently and then have one final, honest conversation about where you each stand. If you're still on opposite sides, you both need to decide whether the relationship can continue.
+
+### 4. Protect yourself financially
+
+If this relationship is heading toward a split, start preparing now:
+- Document all shared financial contributions
+- Understand your lease terms and early exit options
+- Clarify who owns what property
+- Create a savings buffer for transition costs
+
+## What a cohabitation agreement would have done
+
+A written agreement at the start of your cohabitation would have:
+- Documented your shared understanding about major life decisions
+- Defined financial contributions and property ownership
+- Established a separation plan if fundamental differences arose
+- Given you a framework for navigating exactly this situation
+
+It wouldn't have prevented him from changing his mind. But it would have given both of you clarity, financial protection, and a structured way to separate if needed.
+
+## The hardest truth
+
+Priya, there is no compromise position on children. You can't have half a child. You can't postpone the decision forever. And you can't absorb the resentment of giving up something that matters deeply to you just to preserve a relationship.
+
+If he needs children and you don't want them, the kindest thing for both of you might be to acknowledge that — and to separate your lives with as much respect and financial clarity as possible.
+
+**[Create a cohabitation agreement with separation terms →](/)** Our free generator covers financial splits, property ownership, and structured exit plans. Protect yourself before circumstances force the conversation.
+    `.trim(),
+  },
+  {
+    slug: "my-boyfriend-games-all-night-while-i-pay-for-everything",
+    title: "My Boyfriend Games All Night and I Pay for Basically Everything",
+    description: "A girlfriend writes in about the exhausting reality of funding a household while her partner contributes nothing but excuses.",
+    date: "2026-03-04",
+    readingTime: "6 min read",
+    category: "Money",
+    content: `
+*"My boyfriend works part-time — about 20 hours a week — and spends the rest of his time gaming. I work full-time and pay about 80% of our expenses. He covers some groceries sometimes. He stays up until 3 AM gaming, sleeps until noon, and doesn't clean. When I ask him to get more hours or find a better job, he says he's 'figuring things out' and that I'm 'not being supportive.' I'm 26. I feel like I'm raising a teenager."* — Elena, 26
+
+Elena, you're not unsupportive. You're subsidizing someone else's lifestyle at the expense of your own financial security. And "figuring things out" stops being an acceptable answer when someone else is paying for the figuring.
+
+## The math you need to see
+
+Let's say your combined monthly expenses are $3,000 (rent, utilities, food, etc.):
+- You pay: ~$2,400 (80%)
+- He pays: ~$600 (20%)
+
+That means every month, you're covering $1,200 more than an equal split. Over a year, that's **$14,400** in additional expenses you've absorbed. That's money that could be in your savings, your retirement, or your emergency fund.
+
+Meanwhile, he works 20 hours a week by choice and spends the rest of his time on a hobby. This isn't a temporary setback. It's a permanent arrangement — because nothing is requiring it to change.
+
+## Why "I'm figuring things out" is a deflection
+
+"Figuring things out" implies active work toward a goal: applying for jobs, building skills, making a plan. If your boyfriend is doing those things, you'd see evidence — applications sent, interviews scheduled, courses taken.
+
+If instead he's gaming 8+ hours a day, "figuring things out" means "I'm comfortable with this arrangement because you're paying for it."
+
+## What needs to happen
+
+### 1. Define financial obligations in writing
+
+| Expense | Your Share | His Share |
+|---------|-----------|-----------|
+| Rent | 50% | 50% |
+| Utilities | 50% | 50% |
+| Groceries | 50% | 50% |
+| Internet | 50% | 50% |
+
+If a proportional split makes more sense given income differences, fine — but even a proportional split based on 20 hours/week vs. 40 hours/week would have him paying significantly more than "some groceries sometimes."
+
+### 2. Set a contribution deadline
+
+"Starting [date], we split expenses equally (or proportionally). If that means you need more hours or a different job, that's your responsibility to figure out by then."
+
+This isn't an ultimatum. It's a boundary. You're defining what you're willing to fund and what you're not.
+
+### 3. Stop subsidizing optional unemployment
+
+There's a difference between a partner who's laid off and looking, and a partner who works part-time by choice and games all night. You are not financially obligated to fund the second scenario.
+
+### 4. Separate "supportive" from "enabling"
+
+Supporting a partner means: encouraging them during hard times, helping them problem-solve, being patient during genuine transitions.
+
+Enabling a partner means: paying for their lifestyle while they avoid responsibility, accepting excuses instead of action, and being told you're unsupportive for wanting basic fairness.
+
+You know which one this is.
+
+## The gaming element
+
+Gaming isn't the problem. Plenty of people game and also hold jobs, pay bills, and contribute to their household. The problem is that gaming has replaced productivity, and your income is what makes that possible.
+
+If he had to pay half the rent, the gaming schedule would change instantly — because it would have to.
+
+## What happens without change
+
+Without a written agreement and clear financial expectations:
+- You'll continue paying 80%+ of expenses
+- Your savings will stagnate while his leisure time grows
+- Resentment will build until you either explode or leave
+- He'll act surprised when it ends, because from his perspective "everything was fine"
+
+Everything was fine — for him. Because you were paying for it.
+
+**[Create a fair financial agreement →](/)** Our free cohabitation agreement generator covers expense splits, contribution requirements, and savings goals. Stop guessing. Start documenting.
+    `.trim(),
+  },
+  {
+    slug: "my-partner-reads-all-my-texts-and-calls-it-transparency",
+    title: "My Partner Reads All My Texts and Calls It 'Transparency'",
+    description: "A partner writes in about the blurred line between openness and surveillance — and why privacy in a relationship isn't something to feel guilty about.",
+    date: "2026-03-02",
+    readingTime: "5 min read",
+    category: "Conflict",
+    content: `
+*"My partner insists on 'full transparency' — which means they want access to my phone, my email, and my social media. If I hesitate, they say I must be hiding something. I'm not. I just feel like I have no private space left. Even my group chat with my siblings — they'll read it and ask about things that were said. I brought up that I'd like some privacy and they said, 'People in healthy relationships don't need privacy from each other.' Is that true?"* — Jordan, 23
+
+Jordan, no. That is not true. And the person telling you that is using the language of healthy relationships to justify surveillance.
+
+## Privacy is not secrecy
+
+These are two completely different things:
+
+**Privacy** is: not sharing every text, thought, and conversation with your partner. Having a group chat your partner doesn't read. Journaling without someone looking over your shoulder. Having an inner life that belongs to you.
+
+**Secrecy** is: hiding an active deception — a secret relationship, hidden debts, undisclosed major decisions.
+
+Your partner has collapsed these into one category so that any request for privacy looks like secrecy. That's a manipulation tactic, whether they realize it or not.
+
+## What "full transparency" actually means here
+
+In your partner's framework:
+- You must share everything → they decide what's concerning
+- You ask for privacy → that's proof you're hiding something
+- You comply → you lose autonomy
+- You resist → you become the problem
+
+This is a closed loop. There's no winning move because the system is designed so that your compliance is the only acceptable output.
+
+## What healthy transparency actually looks like
+
+| Healthy | Unhealthy |
+|---------|-----------|
+| Sharing major financial decisions | Demanding access to every transaction |
+| Being honest about where you're going | Tracking each other's location 24/7 |
+| Discussing relationship concerns openly | Reading each other's private messages |
+| Voluntarily sharing your day | Being interrogated about your day |
+| Agreeing on social media boundaries | Monitoring each other's follows and likes |
+
+Transparency is mutual and voluntary. Surveillance is one-directional and demanded.
+
+## What to do
+
+### 1. Name what's happening
+
+"I love you and I'm committed to being honest with you. But reading my private messages and demanding access to my accounts isn't transparency — it's monitoring. I need personal space, and that's a normal, healthy need."
+
+### 2. Define boundaries
+
+You have the right to:
+- Private conversations with friends and family
+- A phone your partner doesn't go through
+- Social media accounts they don't audit
+- Personal time and space without interrogation
+
+### 3. Offer real transparency instead
+
+You can be open about the things that affect your shared life:
+- Finances: shared expenses, large purchases, debts
+- Schedule: where you'll be and when
+- Relationship: honest communication about feelings and concerns
+
+This is what transparency in a healthy relationship actually looks like. Not open-phone policies.
+
+### 4. Watch how they respond
+
+If your partner responds to reasonable privacy boundaries with anger, guilt-tripping, or accusations — that's a major red flag. A partner who loves you will respect your boundaries even if they feel uncomfortable at first.
+
+A partner who can't tolerate your privacy will only escalate their control over time.
+
+## The cohabitation connection
+
+Jordan, you're 23 and learning something that many people don't figure out until much later: you can share a home with someone and still deserve a private inner life. A cohabitation agreement can include communication expectations, privacy boundaries, and technology policies — things that seem awkward to write down but prevent exactly the kind of creep you're experiencing.
+
+**[Set boundaries in writing with a cohabitation agreement →](/)** Our free generator covers communication expectations, household rules, and personal boundaries. Define what sharing a life actually means.
+    `.trim(),
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
