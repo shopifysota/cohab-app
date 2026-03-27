@@ -227,40 +227,58 @@ export default function CohabitationAgreementGenerator() {
       <div className="p-4 md:p-8">
       {/* SEO Content - Hidden from users but visible to search engines */}
       <div className="sr-only">
-        <h1>Cohabitation Agreement Generator - Free Professional Template Creator</h1>
-        <p>Create professional cohabitation agreements online for free. Generate clear, structured living together agreements in minutes. Download as PDF, Word document, or text file. This tool is for informational purposes only and does not constitute legal advice.</p>
+        <h1>Free Cohabitation Agreement Generator — Customizable, Instant Download, No Sign-Up</h1>
+        <p>Create a customizable cohabitation agreement in under 5 minutes — 100% free, no account required. Download instantly as PDF, Word (DOCX), or plain text. Covers finances, property, pets, separation terms, and more. Used by couples across the United States, Canada, the UK, and Australia.</p>
 
         <h2>What is a Cohabitation Agreement?</h2>
-        <p>A cohabitation agreement is a written document that outlines the expectations and responsibilities of unmarried couples living together. It covers financial arrangements, property ownership, debt responsibility, and separation terms.</p>
+        <p>A cohabitation agreement is a written document that outlines the expectations and responsibilities of unmarried couples living together. Also known as a living together agreement, domestic partnership agreement, or no-nup, it covers financial arrangements, property ownership, debt responsibility, and separation terms. This tool is for informational purposes only and does not constitute legal advice.</p>
 
         <h2>Why Do You Need a Cohabitation Agreement?</h2>
         <ul>
-          <li>Protects both partners financially</li>
-          <li>Clarifies property ownership expectations</li>
-          <li>Prevents disputes over shared expenses</li>
+          <li>Protects both partners financially when sharing a home</li>
+          <li>Clarifies who pays rent, mortgage, utilities, and groceries</li>
+          <li>Documents property ownership — what is yours, mine, and ours</li>
+          <li>Prevents disputes over shared expenses and belongings</li>
           <li>Creates a clear reference point if the relationship ends</li>
-          <li>Starts an important conversation about shared living</li>
+          <li>Covers pet custody and care responsibilities</li>
+          <li>Starts an important conversation about shared living expectations</li>
         </ul>
 
-        <h2>Free Cohabitation Agreement Template Features</h2>
+        <h2>Why Choose This Free Generator?</h2>
         <ul>
-          <li>Step-by-step guided questionnaire</li>
-          <li>Professional, clear language</li>
-          <li>Customizable terms and conditions</li>
-          <li>Multiple export formats (PDF, DOCX, TXT)</li>
-          <li>Instant download and printing</li>
+          <li>100% free — no hidden fees, no premium tier, no upsells</li>
+          <li>No sign-up or email required — start immediately</li>
+          <li>Fully customizable — edit every section to match your situation</li>
+          <li>Instant download — PDF, Word document, or plain text</li>
+          <li>Step-by-step guided questionnaire — takes under 5 minutes</li>
+          <li>Professional, clear formatting — ready to print and sign</li>
+          <li>Optional lifestyle section — guests, cleaning, quiet hours, shared accounts</li>
+          <li>Works on phone, tablet, and desktop</li>
         </ul>
 
         <h2>Cohabitation Agreement Topics Covered</h2>
         <ul>
-          <li>Rent and mortgage payment responsibilities</li>
-          <li>Utility bill sharing arrangements</li>
-          <li>Bank account and financial management</li>
-          <li>Property ownership (separate vs. joint)</li>
+          <li>Rent and mortgage payment responsibilities and splits</li>
+          <li>Utility, grocery, and household bill sharing arrangements</li>
+          <li>Bank account management — joint, separate, or hybrid</li>
+          <li>Property ownership — pre-existing and jointly acquired</li>
           <li>Debt and liability responsibilities</li>
-          <li>Pet ownership and care arrangements</li>
-          <li>Relationship termination procedures</li>
-          <li>Dispute resolution methods</li>
+          <li>Pet ownership, custody, and care arrangements</li>
+          <li>Move-out and separation procedures</li>
+          <li>Dispute resolution methods — mediation, discussion</li>
+          <li>Guest policies, quiet hours, and household rules</li>
+          <li>Shared digital accounts, streaming, and technology</li>
+          <li>Insurance and emergency fund arrangements</li>
+        </ul>
+
+        <h2>Who Uses a Cohabitation Agreement?</h2>
+        <ul>
+          <li>Couples moving in together for the first time</li>
+          <li>Partners with different income levels or financial situations</li>
+          <li>Unmarried couples buying or renting property together</li>
+          <li>Couples with pets they want to protect</li>
+          <li>Partners who want financial clarity and peace of mind</li>
+          <li>Anyone who wants a fair, written understanding before sharing a home</li>
         </ul>
       </div>
 
