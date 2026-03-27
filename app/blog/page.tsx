@@ -6,12 +6,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cohabitation Blog — Advice for Couples Moving In Together | NestRules",
   description:
-    "Practical guides on splitting rent, handling shared property, resolving cohabitation conflicts, and protecting yourself legally when you move in with a partner.",
+    "Practical guides on splitting rent, handling shared property, resolving cohabitation conflicts, and protecting yourself when you move in with a partner.",
   alternates: { canonical: "https://nestrules.net/blog" },
   openGraph: {
     title: "Cohabitation Blog — Advice for Couples Moving In Together",
     description:
-      "Practical guides on splitting rent, handling shared property, resolving cohabitation conflicts, and protecting yourself legally.",
+      "Practical guides on splitting rent, handling shared property, resolving cohabitation conflicts, and protecting yourself.",
     url: "https://nestrules.net/blog",
     siteName: "NestRules",
     locale: "en_US",
@@ -64,7 +64,7 @@ export default function BlogIndex() {
           </h1>
           <p className="text-muted-foreground max-w-2xl">
             Practical advice for couples navigating money, property, and expectations when
-            moving in together — plus the legal protection you actually need.
+            moving in together — plus the protection you actually need.
           </p>
         </div>
 

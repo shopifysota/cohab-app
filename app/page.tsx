@@ -15,9 +15,7 @@ import {
   FileText,
   AlertTriangle,
   Eye,
-  Phone,
   Heart,
-  Settings,
   Plus,
   Minus,
 } from "lucide-react";
@@ -637,13 +635,6 @@ export default function CohabitationAgreementGenerator() {
                     </Button>
                   ) : (
                     <div className="w-full space-y-4">
-                      <div className="rounded-2xl bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 p-4">
-                        <div className="flex items-center gap-2 text-green-800 mb-2">
-                          <CheckCircle2 className="h-5 w-5" />
-                          <span className="font-semibold">Your agreement is ready!</span>
-                        </div>
-                        <p className="text-sm text-green-700">Download in your preferred format. All files include professional formatting.</p>
-                      </div>
                       <div className="grid gap-3 sm:grid-cols-3">
                         <Button onClick={downloadText} className="h-12 text-sm font-semibold bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all px-3">
                           <Download className="mr-2 h-4 w-4" /> TXT
