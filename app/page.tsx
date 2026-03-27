@@ -519,7 +519,10 @@ export default function CohabitationAgreementGenerator() {
                   {!form.includeLifestyle && (
                     <div className="rounded-lg border-2 border-dashed border-gray-300 p-4 mt-4">
                       <button
-                        onClick={() => update("includeLifestyle", true)}
+                        onClick={() => {
+                          update("includeLifestyle", true);
+                          setStep(4);
+                        }}
                         className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900"
                       >
                         <Plus className="h-4 w-4" />
@@ -531,7 +534,7 @@ export default function CohabitationAgreementGenerator() {
                   {form.includeLifestyle && (
                     <div className="rounded-lg border border-green-200 bg-green-50 p-4 mt-4">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm font-medium text-green-800">✓ Lifestyle section activated</span>
+                        <span className="text-sm font-medium text-green-800">✓ Lifestyle section added</span>
                         <button
                           onClick={() => update("includeLifestyle", false)}
                           className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700"
@@ -540,7 +543,7 @@ export default function CohabitationAgreementGenerator() {
                           Remove
                         </button>
                       </div>
-                      <p className="text-xs text-green-700">Lifestyle inputs are on the next step if activated.</p>
+                      <p className="text-xs text-green-700">Use Next to edit lifestyle details, or remove to skip.</p>
                     </div>
                   )}
                 </div>
