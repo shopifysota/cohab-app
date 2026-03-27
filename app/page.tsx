@@ -326,11 +326,11 @@ export default function CohabitationAgreementGenerator() {
                 </div>
               </div>
               <aside className="rounded-2xl border border-indigo-200 bg-white p-4 shadow-sm">
-                <h3 className="text-lg font-semibold">Important disclaimer</h3>
-                <p className="mt-2 text-sm text-muted-foreground">This tool is for informational purposes only and does not constitute legal advice. It generates a clear, plain-language agreement based on your answers.</p>
-                <p className="mt-2 text-sm text-muted-foreground">We strongly recommend having a licensed attorney review the final document for your specific jurisdiction and situation.</p>
+                <h3 className="text-lg font-semibold">Good to know</h3>
+                <p className="mt-2 text-sm text-muted-foreground">This tool creates a clear, plain-language agreement based on your answers. It&apos;s a great starting point for any couple moving in together.</p>
+                <p className="mt-2 text-sm text-muted-foreground">For complex situations, consider having an attorney review the final document.</p>
                 <p className="mt-3 text-xs text-muted-foreground">
-                  Notarization is optional but encouraged for additional confidence.
+                  Not legal advice. Notarization is optional but can add extra confidence.
                 </p>
               </aside>
             </div>
